@@ -23,7 +23,7 @@ const services = [
   },
   {
     icon: MonitorSmartphone,
-    title: "Website & Landing Page Design",
+    title: "Website Design, App Design & Development",
     description: "Building stunning, high-converting digital flagships that offer seamless user experiences across all devices."
   },
   {

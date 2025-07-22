@@ -24,7 +24,8 @@ const services = [
   {
     icon: MonitorSmartphone,
     title: "Website Design, App Design & Development",
-    description: "Building stunning, high-converting digital flagships that offer seamless user experiences across all devices."
+    description: "Building stunning, high-converting digital flagships that offer seamless user experiences across all devices.",
+    href: "/website-design-app-development",
   },
   {
     icon: PenTool,
@@ -48,9 +49,11 @@ const ServiceCard = ({ service }: { service: typeof services[0] }) => (
       </CardHeader>
       <CardContent>
         <p className="text-foreground/80">{service.description}</p>
-        <div className="mt-4 text-accent font-semibold flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          Learn More <ArrowRight className="h-4 w-4" />
-        </div>
+        {service.href && (
+            <div className="mt-4 text-accent font-semibold flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Learn More <ArrowRight className="h-4 w-4" />
+            </div>
+        )}
       </CardContent>
     </Card>
 );
@@ -68,7 +71,7 @@ export function Services() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) =>
             service.href ? (
-              <Link href={service.href} key={index}>
+              <Link href={service.href} key={index} className="flex">
                 <ServiceCard service={service} />
               </Link>
             ) : (

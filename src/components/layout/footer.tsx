@@ -51,7 +51,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <Logo isFooter />
             <p className="mt-4 text-sm text-foreground/70">
-              Morningstar Media – Rise. Shine. Influence.
+              StellarBrand – Rise. Shine. Influence.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((item, index) => (

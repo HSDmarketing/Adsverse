@@ -11,8 +11,8 @@ const plans = [
   {
     name: "Starter",
     price: {
-        inr: "49,999",
-        usd: "599"
+        inr: "24,999",
+        usd: "299"
     },
     description: "For new ventures ready to make their mark in the digital cosmos.",
     features: [
@@ -26,8 +26,8 @@ const plans = [
   {
     name: "Growth",
     price: {
-        inr: "1,24,999",
-        usd: "1,499"
+        inr: "32,999",
+        usd: "399"
     },
     description: "The perfect package for growing businesses aiming for higher orbits.",
     features: [
@@ -42,8 +42,8 @@ const plans = [
   {
     name: "Dominator",
     price: {
-        inr: "2,49,999",
-        usd: "2,999"
+        inr: "57,999",
+        usd: "699"
     },
     description: "For established brands ready to dominate their industry's universe.",
     features: [

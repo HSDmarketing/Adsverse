@@ -20,12 +20,12 @@ export function Hero() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full shadow-lg shadow-accent/20 transition-transform duration-300 hover:scale-105">
-              <Link href="#contact">
+              <Link href="/#contact">
                 Book a Call <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="rounded-full bg-background/50 backdrop-blur-sm border-foreground/30 hover:bg-foreground/10 transition-transform duration-300 hover:scale-105">
-              <Link href="#portfolio">View Our Work</Link>
+              <Link href="/#portfolio">View Our Work</Link>
             </Button>
           </div>
         </div>

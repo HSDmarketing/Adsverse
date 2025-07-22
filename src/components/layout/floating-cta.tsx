@@ -72,7 +72,7 @@ export function FloatingCta() {
             </Link>
         </Button>
         <Button asChild className="rounded-full bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href="#contact">Book Consultation</Link>
+            <Link href="/#contact">Book Consultation</Link>
         </Button>
       </div>
     </div>

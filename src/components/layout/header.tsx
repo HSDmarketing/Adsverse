@@ -13,12 +13,12 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Our Work" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#services", label: "Services" },
+  { href: "/#portfolio", label: "Our Work" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#blog", label: "Blog" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -67,7 +67,7 @@ export function Header() {
         </nav>
         <div className="hidden md:flex items-center gap-4">
           <Button asChild variant="outline">
-            <Link href="#contact">Book a Call</Link>
+            <Link href="/#contact">Book a Call</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -90,7 +90,7 @@ export function Header() {
                 <nav className="flex flex-col gap-4">
                   <NavLinkItems isMobile />
                   <Button asChild variant="outline" className="mt-4">
-                    <Link href="#contact">Book a Call</Link>
+                    <Link href="/#contact">Book a Call</Link>
                   </Button>
                 </nav>
               </div>

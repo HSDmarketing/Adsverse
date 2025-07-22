@@ -61,8 +61,8 @@ export function Contact() {
                 <Phone className="h-8 w-8 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Call Us</h3>
-                  <p className="text-foreground/80 text-sm">Mon-Fri from 9am to 5pm.</p>
-                  <a href="tel:+1234567890" className="text-accent hover:underline">+1 (234) 567-890</a>
+                  <p className="text-foreground/80 text-sm">Mon-Sun from 9am to 11pm.</p>
+                  <a href="tel:+919977646456" className="text-accent hover:underline">+91 99776 46456</a>
                 </div>
               </CardContent>
             </Card>
@@ -71,12 +71,12 @@ export function Contact() {
                 <MapPin className="h-8 w-8 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Our Galaxy</h3>
-                  <p className="text-foreground/80 text-sm">123 Cosmic Way, Stardust City, 90210</p>
+                  <p className="text-foreground/80 text-sm">Vijay Nagar, Indore (452010), Madhya Pradesh</p>
                 </div>
               </CardContent>
             </Card>
             <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white">
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919977646456" target="_blank" rel="noopener noreferrer">
                 <MessagesSquare className="mr-2 h-5 w-5" /> Connect on WhatsApp
               </a>
             </Button>

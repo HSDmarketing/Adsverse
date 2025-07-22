@@ -43,7 +43,7 @@ const services = [
     icon: Camera,
     title: "Photo, Video shoot and editing",
     description: "Capturing your brand's best moments with professional photography and videography services.",
-    href: "#",
+    href: "/photo-video-editing",
   },
 ];
 

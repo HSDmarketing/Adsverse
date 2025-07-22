@@ -62,7 +62,7 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold">Call Us</h3>
                   <p className="text-foreground/80 text-sm">Mon-Sun from 9am to 11pm.</p>
-                  <a href="tel:+919977646456" className="text-accent hover:underline">+91 99776 46456</a>
+                  <a href="tel:+919977646156" className="text-accent hover:underline">+91 99776 46156</a>
                 </div>
               </CardContent>
             </Card>
@@ -76,7 +76,7 @@ export function Contact() {
               </CardContent>
             </Card>
             <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white">
-              <a href="https://wa.me/919977646456" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919977646156" target="_blank" rel="noopener noreferrer">
                 <MessagesSquare className="mr-2 h-5 w-5" /> Connect on WhatsApp
               </a>
             </Button>

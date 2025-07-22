@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight } from "lucide-react";
+import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight, Camera } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -39,6 +39,12 @@ const services = [
     description: "Collaborating with stars of the digital world to amplify your message and build authentic connections.",
     href: "/influencer-marketing",
   },
+  {
+    icon: Camera,
+    title: "Photo, Video shoot and editing",
+    description: "Capturing your brand's best moments with professional photography and videography services.",
+    href: "#",
+  },
 ];
 
 const ServiceCard = ({ service }: { service: typeof services[0] }) => (
@@ -51,7 +57,7 @@ const ServiceCard = ({ service }: { service: typeof services[0] }) => (
       </CardHeader>
       <CardContent>
         <p className="text-foreground/80">{service.description}</p>
-        {service.href && (
+        {service.href && service.href !== "#" && (
             <div className="mt-4 text-accent font-semibold flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Learn More <ArrowRight className="h-4 w-4" />
             </div>
@@ -72,7 +78,7 @@ export function Services() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) =>
-            service.href ? (
+            service.href && service.href !== "#" ? (
               <Link href={service.href} key={index} className="flex">
                 <ServiceCard service={service} />
               </Link>

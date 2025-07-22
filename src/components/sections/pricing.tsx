@@ -5,15 +5,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useLocation } from "@/hooks/use-location";
 
 const plans = [
   {
     name: "Starter",
-    price: {
-        inr: "24,999",
-        usd: "299"
-    },
+    price: "299",
     description: "For new ventures ready to make their mark in the digital cosmos.",
     features: [
       "Brand Strategy Session",
@@ -25,10 +21,7 @@ const plans = [
   },
   {
     name: "Growth",
-    price: {
-        inr: "32,999",
-        usd: "399"
-    },
+    price: "399",
     description: "The perfect package for growing businesses aiming for higher orbits.",
     features: [
       "Everything in Starter, plus:",
@@ -41,10 +34,7 @@ const plans = [
   },
   {
     name: "Dominator",
-    price: {
-        inr: "57,999",
-        usd: "699"
-    },
+    price: "699",
     description: "For established brands ready to dominate their industry's universe.",
     features: [
       "Everything in Growth, plus:",
@@ -58,18 +48,6 @@ const plans = [
 ];
 
 export function Pricing() {
-  const { country, isLoading } = useLocation();
-
-  const getPrice = (price: { inr: string; usd: string }) => {
-    if (isLoading) {
-      return { amount: '...', currency: '' };
-    }
-    if (country === 'IN') {
-      return { amount: price.inr, currency: '₹' };
-    }
-    return { amount: price.usd, currency: '$' };
-  };
-
   return (
     <section id="pricing" className="py-20 md:py-32 bg-background/70">
       <div className="container mx-auto px-4 md:px-6">
@@ -80,9 +58,7 @@ export function Pricing() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {plans.map((plan) => {
-            const { amount, currency } = getPrice(plan.price);
-            return (
+          {plans.map((plan) => (
               <Card key={plan.name} className={cn(
                 "flex flex-col h-full",
                 plan.isPopular ? "border-accent shadow-accent/20 shadow-lg -translate-y-4" : "border-border"
@@ -94,7 +70,7 @@ export function Pricing() {
                   <CardTitle className="font-headline text-2xl">{plan.name}</CardTitle>
                   <CardDescription>{plan.description}</CardDescription>
                   <div>
-                    <span className="text-4xl font-bold">{currency}{amount}</span>
+                    <span className="text-4xl font-bold">${plan.price}</span>
                     <span className="text-foreground/70">/month</span>
                   </div>
                 </CardHeader>
@@ -114,8 +90,7 @@ export function Pricing() {
                   </Button>
                 </CardFooter>
               </Card>
-            )
-          })}
+          ))}
         </div>
       </div>
     </section>

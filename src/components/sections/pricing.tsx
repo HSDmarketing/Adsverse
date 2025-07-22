@@ -1,12 +1,19 @@
+
+"use client";
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useLocation } from "@/hooks/use-location";
 
 const plans = [
   {
     name: "Starter",
-    price: "$999",
+    price: {
+        inr: "49,999",
+        usd: "599"
+    },
     description: "For new ventures ready to make their mark in the digital cosmos.",
     features: [
       "Brand Strategy Session",
@@ -18,7 +25,10 @@ const plans = [
   },
   {
     name: "Growth",
-    price: "$2,499",
+    price: {
+        inr: "1,24,999",
+        usd: "1,499"
+    },
     description: "The perfect package for growing businesses aiming for higher orbits.",
     features: [
       "Everything in Starter, plus:",
@@ -31,7 +41,10 @@ const plans = [
   },
   {
     name: "Dominator",
-    price: "$4,999",
+    price: {
+        inr: "2,49,999",
+        usd: "2,999"
+    },
     description: "For established brands ready to dominate their industry's universe.",
     features: [
       "Everything in Growth, plus:",
@@ -45,6 +58,18 @@ const plans = [
 ];
 
 export function Pricing() {
+  const { country, isLoading } = useLocation();
+
+  const getPrice = (price: { inr: string; usd: string }) => {
+    if (isLoading) {
+      return { amount: '...', currency: '' };
+    }
+    if (country === 'IN') {
+      return { amount: price.inr, currency: '₹' };
+    }
+    return { amount: price.usd, currency: '$' };
+  };
+
   return (
     <section id="pricing" className="py-20 md:py-32 bg-background/70">
       <div className="container mx-auto px-4 md:px-6">
@@ -55,39 +80,42 @@ export function Pricing() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {plans.map((plan) => (
-            <Card key={plan.name} className={cn(
-              "flex flex-col h-full",
-              plan.isPopular ? "border-accent shadow-accent/20 shadow-lg -translate-y-4" : "border-border"
-            )}>
-              {plan.isPopular && (
-                <div className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider text-center py-1 rounded-t-lg">Most Popular</div>
-              )}
-              <CardHeader>
-                <CardTitle className="font-headline text-2xl">{plan.name}</CardTitle>
-                <CardDescription>{plan.description}</CardDescription>
-                <div>
-                  <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-foreground/70">/month</span>
-                </div>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <ul className="space-y-3">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
-                      <Check className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" />
-                      <span className="text-foreground/90">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button className={cn("w-full", plan.isPopular ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "bg-primary")}>
-                  Get Started
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+          {plans.map((plan) => {
+            const { amount, currency } = getPrice(plan.price);
+            return (
+              <Card key={plan.name} className={cn(
+                "flex flex-col h-full",
+                plan.isPopular ? "border-accent shadow-accent/20 shadow-lg -translate-y-4" : "border-border"
+              )}>
+                {plan.isPopular && (
+                  <div className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider text-center py-1 rounded-t-lg">Most Popular</div>
+                )}
+                <CardHeader>
+                  <CardTitle className="font-headline text-2xl">{plan.name}</CardTitle>
+                  <CardDescription>{plan.description}</CardDescription>
+                  <div>
+                    <span className="text-4xl font-bold">{currency}{amount}</span>
+                    <span className="text-foreground/70">/month</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <ul className="space-y-3">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start">
+                        <Check className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" />
+                        <span className="text-foreground/90">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button className={cn("w-full", plan.isPopular ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "bg-primary")}>
+                    Get Started
+                  </Button>
+                </CardFooter>
+              </Card>
+            )
+          })}
         </div>
       </div>
     </section>

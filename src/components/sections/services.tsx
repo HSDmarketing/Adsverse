@@ -29,7 +29,7 @@ const services = [
   },
   {
     icon: PenTool,
-    title: "SEO & Content Creation",
+    title: "SEO & Ads",
     description: "Creating stellar content that captivates audiences and climbs the ranks of search engine results."
   },
   {

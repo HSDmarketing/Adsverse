@@ -15,8 +15,6 @@ import {
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "/brand-strategy", label: "Brand Strategy" },
-  { href: "/social-media-management", label: "Social Media" },
   { href: "#portfolio", label: "Our Work" },
   { href: "#pricing", label: "Pricing" },
   { href: "#blog", label: "Blog" },

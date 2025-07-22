@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Social Media Management - StellarBrand',
-    description: 'At StellarBrand, we manage your digital presence like a constellation: every post, comment, and story aligns to form a stellar brand experience.',
+    title: 'Social Media Management - Morningstar Media',
+    description: 'At Morningstar Media, we manage your digital presence like a constellation: every post, comment, and story aligns to form a stellar brand experience.',
 };
 
 export default function SocialMediaManagementPage() {
@@ -23,7 +23,7 @@ export default function SocialMediaManagementPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In today’s fast-scrolling world, your social media presence isn’t optional — it’s essential. At StellarBrand, we manage your digital presence like a constellation: every post, comment, and story aligns to form a stellar brand experience.
+                            In today’s fast-scrolling world, your social media presence isn’t optional — it’s essential. At Morningstar Media, we manage your digital presence like a constellation: every post, comment, and story aligns to form a stellar brand experience.
                         </p>
                         <p>
                             We don’t just post — we strategize, curate, and connect. Our team crafts magnetic content and manages your platforms with a pulse on trends, ensuring your brand consistently shines across every screen.
@@ -74,7 +74,7 @@ export default function SocialMediaManagementPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your voice echo across the digital universe.</p>
-                            <p className="mt-2">With StellarBrand, your social presence becomes a living, breathing brand experience — one that inspires, informs, and influences.</p>
+                            <p className="mt-2">With Morningstar Media, your social presence becomes a living, breathing brand experience — one that inspires, informs, and influences.</p>
                             <p className="mt-6 text-2xl">
                                 🌌 Let’s turn followers into loyal fans. <Link href="/#contact" className="text-accent hover:underline">Book your social media audit today.</Link>
                             </p>

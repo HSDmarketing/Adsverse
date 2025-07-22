@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Influencer Marketing - StellarBrand',
-    description: 'At StellarBrand, we help you connect with the right voices to tell your story in a way that feels natural, credible, and truly engaging.',
+    title: 'Influencer Marketing - Morningstar Media',
+    description: 'At Morningstar Media, we help you connect with the right voices to tell your story in a way that feels natural, credible, and truly engaging.',
 };
 
 export default function InfluencerMarketingPage() {
@@ -23,7 +23,7 @@ export default function InfluencerMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In a world driven by trust and relatability, influencer marketing isn’t just a trend — it’s a powerful bridge between brands and real audiences. At StellarBrand, we help you connect with the right voices to tell your story in a way that feels natural, credible, and truly engaging.
+                            In a world driven by trust and relatability, influencer marketing isn’t just a trend — it’s a powerful bridge between brands and real audiences. At Morningstar Media, we help you connect with the right voices to tell your story in a way that feels natural, credible, and truly engaging.
                         </p>
                         <p>
                             From micro-creators to digital icons, we handpick influencers who align with your brand values and audience interests — turning followers into loyal fans and impressions into conversions.
@@ -74,7 +74,7 @@ export default function InfluencerMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Real voices. Real impact.</p>
-                            <p className="mt-2">With StellarBrand, your brand doesn't just advertise — it influences, connects, and inspires.</p>
+                            <p className="mt-2">With Morningstar Media, your brand doesn't just advertise — it influences, connects, and inspires.</p>
                             <p className="mt-6 text-2xl">
                                 🌠 Let’s team up with the digital stars who’ll help your brand shine brighter.
                             </p>

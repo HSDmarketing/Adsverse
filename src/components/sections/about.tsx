@@ -17,7 +17,7 @@ export function About() {
           <div className="space-y-6">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Bringing cosmic-level creativity to earthly brands.</h2>
             <p className="text-foreground/80">
-              At StellarBrand, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a team of dreamers, strategists, and creators dedicated to making your brand shine its brightest.
+              At Morningstar Media, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a team of dreamers, strategists, and creators dedicated to making your brand shine its brightest.
             </p>
             <div className="space-y-4">
               <h3 className="font-headline text-xl font-semibold">Our Core Values</h3>

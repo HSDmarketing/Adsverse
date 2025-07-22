@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'SEO & Ads - StellarBrand',
-    description: 'At StellarBrand, we blend the art of storytelling with the science of search. From crafting high-impact content to running precision-targeted ads, we ensure your brand gets discovered — and remembered.',
+    title: 'SEO & Ads - Morningstar Media',
+    description: 'At Morningstar Media, we blend the art of storytelling with the science of search. From crafting high-impact content to running precision-targeted ads, we ensure your brand gets discovered — and remembered.',
 };
 
 export default function SeoAdsPage() {
@@ -23,7 +23,7 @@ export default function SeoAdsPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-12">
                         <p>
-                           At StellarBrand, we blend the art of storytelling with the science of search. From crafting high-impact content to running precision-targeted ads, we ensure your brand gets discovered — and remembered.
+                           At Morningstar Media, we blend the art of storytelling with the science of search. From crafting high-impact content to running precision-targeted ads, we ensure your brand gets discovered — and remembered.
                         </p>
                         <p>
                            Our goal is simple: to boost your visibility, drive qualified traffic, and turn that traffic into loyal customers. Whether it’s organic growth through SEO or fast-track results through paid ads, we guide your brand to the top of search engines and minds.
@@ -55,7 +55,7 @@ export default function SeoAdsPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Rise in search. Rule the results.</p>
-                            <p className="mt-2">Let StellarBrand help you craft visibility strategies that light up the web and generate real business growth.</p>
+                            <p className="mt-2">Let Morningstar Media help you craft visibility strategies that light up the web and generate real business growth.</p>
                             <p className="mt-6 text-2xl">
                                 🌟 Ready to get seen? <Link href="/#contact" className="text-accent hover:underline">Let's optimize your path to the top.</Link>
                             </p>

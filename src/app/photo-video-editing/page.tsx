@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Photo, Video Shoot & Editing - StellarBrand',
+    title: 'Photo, Video Shoot & Editing - Morningstar Media',
     description: 'From influence to impact — we make every post, story, and reel count.',
 };
 
@@ -23,7 +23,7 @@ export default function PhotoVideoEditingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                           With StellarBrand, your brand’s story comes alive with cinematic visuals, real engagement, and cosmic-level creativity. We handle everything from concept to final cut, ensuring your content is not just seen, but felt.
+                           With Morningstar Media, your brand’s story comes alive with cinematic visuals, real engagement, and cosmic-level creativity. We handle everything from concept to final cut, ensuring your content is not just seen, but felt.
                         </p>
 
                         <div>

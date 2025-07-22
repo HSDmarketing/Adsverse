@@ -23,7 +23,7 @@ const caseStudies = [
 
 const testimonials = [
   {
-    quote: "StellarBrand took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled.",
+    quote: "Morningstar Media took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled.",
     name: "Alex Starr",
     title: "CEO of Nebula Inc.",
     avatar: "https://placehold.co/100x100.png",

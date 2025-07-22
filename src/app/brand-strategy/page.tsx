@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Brand Strategy & Identity - StellarBrand',
-    description: 'At StellarBrand, we don’t just build brands — we ignite cosmic identities that align purpose, emotion, and perception into a powerful brand experience.',
+    title: 'Brand Strategy & Identity - Morningstar Media',
+    description: 'At Morningstar Media, we don’t just build brands — we ignite cosmic identities that align purpose, emotion, and perception into a powerful brand experience.',
 };
 
 export default function BrandStrategyPage() {
@@ -23,7 +23,7 @@ export default function BrandStrategyPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            At StellarBrand, we don’t just build brands — we ignite cosmic identities that align purpose, emotion, and perception into a powerful brand experience.
+                            At Morningstar Media, we don’t just build brands — we ignite cosmic identities that align purpose, emotion, and perception into a powerful brand experience.
                         </p>
                         <p>
                             Our approach blends strategy with storytelling to help your brand stand out in the galaxy of competitors. Whether you're launching a new venture or repositioning an existing one, we help shape a narrative that’s not only visually stunning but also authentically you.
@@ -74,7 +74,7 @@ export default function BrandStrategyPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your brand orbit the spotlight.</p>
-                            <p className="mt-2">With StellarBrand, your identity becomes more than a logo — it becomes a legacy.</p>
+                            <p className="mt-2">With Morningstar Media, your identity becomes more than a logo — it becomes a legacy.</p>
                             <p className="mt-6 text-2xl">
                                 🌟 Ready to rise? <Link href="/#contact" className="text-accent hover:underline">Let’s build a brand that outshines the ordinary.</Link>
                             </p>

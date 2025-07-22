@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Website Design, App Design & Development - StellarBrand',
+    title: 'Website Design, App Design & Development - Morningstar Media',
     description: 'Crafting digital experiences that captivate, connect, and convert.',
 };
 
@@ -23,7 +23,7 @@ export default function WebsiteDesignAppDevelopmentPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-12">
                         <p>
-                            At StellarBrand, we bring your ideas to life through world-class design and development — building websites and apps that are not just beautiful, but also fast, functional, and future-ready.
+                            At Morningstar Media, we bring your ideas to life through world-class design and development — building websites and apps that are not just beautiful, but also fast, functional, and future-ready.
                         </p>
                         <p>
                             Whether you're launching a brand, scaling a startup, or transforming a legacy system, our team designs and develops digital platforms that reflect your brand’s soul and deliver real results.

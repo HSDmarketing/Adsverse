@@ -51,7 +51,7 @@ export function Footer() {
           <div className="md:col-span-4">
             <Logo isFooter />
             <p className="mt-4 text-sm text-foreground/70">
-              StellarBrand – Rise. Shine. Influence.
+              Morningstar Media – Rise. Shine. Influence.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((item, index) => (
@@ -86,7 +86,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-border pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} StellarBrand. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Morningstar Media. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

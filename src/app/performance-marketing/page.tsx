@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Performance Marketing - StellarBrand',
-    description: 'At StellarBrand, our Performance Marketing approach is built on strategy, creativity, and precision. We turn your budget into meaningful business outcomes.',
+    title: 'Performance Marketing - Morningstar Media',
+    description: 'At Morningstar Media, our Performance Marketing approach is built on strategy, creativity, and precision. We turn your budget into meaningful business outcomes.',
 };
 
 export default function PerformanceMarketingPage() {
@@ -26,7 +26,7 @@ export default function PerformanceMarketingPage() {
                             In the vast universe of online advertising, we help your brand cut through the noise and land exactly where it needs to be — in front of the right audience, at the right time, with the right message.
                         </p>
                         <p>
-                           At StellarBrand, our Performance Marketing approach is built on strategy, creativity, and precision. From launching high-converting ad campaigns to optimizing every click, we turn your budget into meaningful business outcomes.
+                           At Morningstar Media, our Performance Marketing approach is built on strategy, creativity, and precision. From launching high-converting ad campaigns to optimizing every click, we turn your budget into meaningful business outcomes.
                         </p>
                          <p>
                             We manage data-backed ad campaigns across platforms like Facebook, Instagram, and Google, focused on one thing: delivering real results.
@@ -77,7 +77,7 @@ export default function PerformanceMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your brand shine where it matters most.</p>
-                            <p className="mt-2">With StellarBrand, Performance Marketing isn’t just about spending money — it’s about growing smarter, faster, and farther.</p>
+                            <p className="mt-2">With Morningstar Media, Performance Marketing isn’t just about spending money — it’s about growing smarter, faster, and farther.</p>
                              <p className="mt-6 text-2xl">
                                 🚀 Ready to boost your ROI? <Link href="/#contact" className="text-accent hover:underline">Let's discuss your campaign.</Link>
                             </p>

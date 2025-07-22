@@ -7,8 +7,8 @@ import { Footer } from '@/components/layout/footer';
 import { FloatingCta } from '@/components/layout/floating-cta';
 
 export const metadata: Metadata = {
-  title: 'StellarBrand - Where Brands Rise First',
-  description: 'StellarBrand: A creative marketing agency that transforms your brand into a shining star.',
+  title: 'Morningstar Media - Where Brands Rise First',
+  description: 'Morningstar Media: A creative marketing agency that transforms your brand into a shining star.',
   keywords: ['marketing agency', 'brand strategy', 'social media', 'performance marketing', 'seo', 'web design'],
 };
 

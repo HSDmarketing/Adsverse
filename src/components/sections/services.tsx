@@ -11,7 +11,7 @@ const services = [
   },
   {
     icon: Share2,
-    title: "Social Media Management",
+    title: "Social media management & Social media handling",
     description: "Navigating the social cosmos to build communities, engage followers, and elevate your brand's presence.",
     href: "/social-media-management",
   },

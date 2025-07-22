@@ -30,7 +30,8 @@ const services = [
   {
     icon: PenTool,
     title: "SEO & Ads",
-    description: "Creating stellar content that captivates audiences and climbs the ranks of search engine results."
+    description: "Creating stellar content that captivates audiences and climbs the ranks of search engine results.",
+    href: "/seo-ads",
   },
   {
     icon: Star,

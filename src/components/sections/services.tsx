@@ -36,7 +36,8 @@ const services = [
   {
     icon: Star,
     title: "Influencer Marketing",
-    description: "Collaborating with stars of the digital world to amplify your message and build authentic connections."
+    description: "Collaborating with stars of the digital world to amplify your message and build authentic connections.",
+    href: "/influencer-marketing",
   },
 ];
 

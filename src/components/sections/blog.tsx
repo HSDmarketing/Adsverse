@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -11,6 +12,7 @@ const posts = [
     excerpt: "Exploring how artificial intelligence is reshaping brand strategies and customer engagement in the digital age.",
     image: "https://placehold.co/600x400.png",
     aiHint: "ai abstract",
+    href: "/blog/future-of-ai-in-marketing",
   },
   {
     title: "5 SEO Trends to Watch in 2025",
@@ -19,6 +21,7 @@ const posts = [
     excerpt: "Stay ahead of the curve with these upcoming search engine optimization trends that will define online visibility.",
     image: "https://placehold.co/600x400.png",
     aiHint: "data chart",
+    href: "/blog/5-seo-trends-to-watch-in-2025",
   },
   {
     title: "Crafting a Brand Story That Resonates",
@@ -27,6 +30,7 @@ const posts = [
     excerpt: "Learn the art of storytelling to create a powerful and memorable brand identity that connects with your audience.",
     image: "https://placehold.co/600x400.png",
     aiHint: "person writing",
+    href: "/blog/crafting-a-brand-story-that-resonates",
   },
 ];
 
@@ -42,7 +46,7 @@ export function Blog() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
-            <Link href="#" key={post.title} className="group block">
+            <Link href={post.href} key={post.title} className="group block">
               <Card className="overflow-hidden h-full flex flex-col transition-shadow duration-300 shadow-lg hover:shadow-primary/20 hover:-translate-y-2">
                 <CardHeader className="p-0">
                   <Image

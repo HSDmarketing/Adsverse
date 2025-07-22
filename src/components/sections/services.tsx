@@ -18,7 +18,8 @@ const services = [
   {
     icon: Target,
     title: "Performance Marketing",
-    description: "Launching precision-targeted ad campaigns on Facebook & Google to maximize your ROI and reach."
+    description: "Launching precision-targeted ad campaigns on Facebook & Google to maximize your ROI and reach.",
+    href: "/performance-marketing",
   },
   {
     icon: MonitorSmartphone,

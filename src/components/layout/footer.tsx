@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, X } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { Button } from "../ui/button";
 
 const socialLinks = [
-  { href: "#", icon: Twitter },
+  { href: "#", icon: X },
   { href: "#", icon: Facebook },
   { href: "#", icon: Instagram },
 ];

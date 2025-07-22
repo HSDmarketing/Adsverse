@@ -9,30 +9,66 @@ import { Textarea } from "@/components/ui/textarea"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, Phone, MessagesSquare, MapPin } from "lucide-react"
+import { useToast } from "@/hooks/use-toast"
+import { useState } from "react"
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
+  contactNo: z.string().min(10, "Contact number must be at least 10 digits."),
   email: z.string().email("Invalid email address."),
   subject: z.string().min(5, "Subject must be at least 5 characters."),
   message: z.string().min(10, "Message must be at least 10 characters.").max(500),
 })
 
 export function Contact() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
+      contactNo: "",
       email: "",
       subject: "",
       message: "",
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    // Here you would typically send the form data to your backend
-    alert("Form submitted! We'll get back to you soon.")
-    form.reset()
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxVKzV4JYTrlV-s-a1tglwK_-M_luda5e9k7IGtAWbF2wbTuahrJbul73DKFo1WZJp9/exec", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams(values as any).toString()
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "Your message has been sent. We'll get back to you soon.",
+        });
+        form.reset();
+      } else {
+        const result = await response.json();
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: result.message || "There was a problem with your request.",
+        });
+      }
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "Could not send message. Please try again later.",
+      });
+    } finally {
+        setIsSubmitting(false);
+    }
   }
 
   return (
@@ -71,7 +107,7 @@ export function Contact() {
                 <MapPin className="h-8 w-8 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Our Galaxy</h3>
-                  <p className="text-foreground/80 text-sm">Vijay Nagar, Indore (452010), Madhya Pradesh</p>
+                  <p className="text-foreground/80 text-sm">vijay nagar, indore (452010) madhyapradesh</p>
                 </div>
               </CardContent>
             </Card>
@@ -91,9 +127,22 @@ export function Contact() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Full Name</FormLabel>
+                          <FormLabel>Name</FormLabel>
                           <FormControl>
                             <Input placeholder="John Doe" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                     <FormField
+                      control={form.control}
+                      name="contactNo"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Contact No</FormLabel>
+                          <FormControl>
+                            <Input placeholder="+91 12345 67890" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -104,7 +153,7 @@ export function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email Address</FormLabel>
+                          <FormLabel>Email Id</FormLabel>
                           <FormControl>
                             <Input placeholder="john.doe@example.com" {...field} />
                           </FormControl>
@@ -130,7 +179,7 @@ export function Contact() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Your Message</FormLabel>
+                          <FormLabel>Message</FormLabel>
                           <FormControl>
                             <Textarea placeholder="Tell us more about your project..." rows={5} {...field} />
                           </FormControl>
@@ -138,7 +187,9 @@ export function Contact() {
                         </FormItem>
                       )}
                     />
-                    <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Send Message</Button>
+                    <Button type="submit" disabled={isSubmitting} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                    </Button>
                   </form>
                 </Form>
               </CardContent>

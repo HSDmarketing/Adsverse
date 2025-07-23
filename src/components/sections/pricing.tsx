@@ -9,38 +9,39 @@ import Link from "next/link";
 
 const plans = [
   {
-    name: "Starter",
-    price: "299",
-    description: "For new ventures ready to make their mark in the digital cosmos.",
+    name: "Launchpad",
+    price: "499",
+    description: "For new ventures ready to establish a strong digital foundation and make their mark.",
     features: [
       "Brand Strategy Session",
-      "Social Media Setup",
-      "Basic Website Audit",
+      "Social Media Setup & 1 Month Management",
+      "5-Page Website Design",
+      "Basic SEO Setup",
       "Monthly Reporting",
     ],
     isPopular: false,
   },
   {
-    name: "Growth",
-    price: "399",
-    description: "The perfect package for growing businesses aiming for higher orbits.",
+    name: "Orbit",
+    price: "999",
+    description: "The perfect package for growing businesses aiming for a higher trajectory and consistent growth.",
     features: [
-      "Everything in Starter, plus:",
-      "Full Social Media Management",
-      "SEO & Content Creation",
+      "Everything in Launchpad, plus:",
+      "Ongoing Social Media Management",
+      "SEO & Content Creation (2 Articles/Mo)",
       "Performance Marketing (1 Platform)",
       "Bi-weekly Strategy Calls",
     ],
     isPopular: true,
   },
   {
-    name: "Dominator",
-    price: "699",
-    description: "For established brands ready to dominate their industry's universe.",
+    name: "Galaxy",
+    price: "1999",
+    description: "For established brands ready to dominate their industry and achieve market leadership.",
     features: [
-      "Everything in Growth, plus:",
-      "Advanced Performance Marketing",
-      "Full Website Redesign/Management",
+      "Everything in Orbit, plus:",
+      "Advanced Performance Marketing (Multi-platform)",
+      "Full Funnel Building & Automation",
       "Influencer Marketing Campaign",
       "Dedicated Account Manager",
     ],
@@ -55,13 +56,13 @@ export function Pricing() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Pricing That Fits Your Trajectory</h2>
           <p className="mt-4 text-foreground/80">
-            Choose your launchpad. Transparent pricing for stellar results.
+            Choose your launchpad. Transparent package pricing for stellar results, with custom plans available.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           {plans.map((plan) => (
               <Card key={plan.name} className={cn(
-                "flex flex-col h-full",
+                "flex flex-col h-full transition-all duration-300",
                 plan.isPopular ? "border-accent shadow-accent/20 shadow-lg -translate-y-4" : "border-border"
               )}>
                 {plan.isPopular && (
@@ -86,17 +87,18 @@ export function Pricing() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className={cn("w-full", plan.isPopular ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "bg-primary")}>
-                    Get Started
+                  <Button asChild className={cn("w-full", plan.isPopular ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "bg-primary")}>
+                    <Link href="/#contact">Get Started</Link>
                   </Button>
                 </CardFooter>
               </Card>
           ))}
         </div>
-        <div className="text-center mt-12">
-            <Button asChild variant="outline">
+        <div className="text-center mt-16">
+            <p className="text-foreground/80">Looking for individual services?</p>
+            <Button asChild variant="outline" className="mt-4">
               <Link href="/pricing">
-                View All Services & Detailed Pricing <ArrowRight className="ml-2 h-4 w-4" />
+                View A La Carte Pricing <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
         </div>

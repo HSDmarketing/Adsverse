@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight, Camera, FileText, Mail, Users, BarChart2, MessageCircle, Link2, Filter, Mic, Youtube, PencilRuler, Store, FileImage, GanttChartSquare, PhoneCall } from "lucide-react";
 import Link from "next/link";
@@ -7,165 +8,62 @@ const services = [
   {
     icon: Crown,
     title: "Brand Strategy & Identity",
-    description: "Crafting unique brand universes that resonate with your target audience and stand the test of time.",
+    description: "Crafting unique brand universes that resonate, captivate, and stand the test of time.",
     href: "/brand-strategy",
   },
   {
     icon: Share2,
-    title: "Social media management & Social media handling",
+    title: "Social Media Management",
     description: "Navigating the social cosmos to build communities, engage followers, and elevate your brand's presence.",
     href: "/social-media-management",
   },
   {
     icon: Target,
     title: "Performance Marketing",
-    description: "Launching precision-targeted ad campaigns on Facebook & Google to maximize your ROI and reach.",
+    description: "Launching precision-targeted ad campaigns on Meta & Google to maximize your ROI and reach.",
     href: "/performance-marketing",
   },
   {
     icon: MonitorSmartphone,
-    title: "Website Design, App Design & Development",
-    description: "Building stunning, high-converting digital flagships that offer seamless user experiences across all devices.",
+    title: "Website & App Development",
+    description: "Building stunning, high-converting digital flagships that offer seamless user experiences.",
     href: "/website-design-app-development",
   },
   {
     icon: PenTool,
-    title: "SEO & Ads",
-    description: "Creating stellar content that captivates audiences and climbs the ranks of search engine results.",
+    title: "SEO & Paid Search",
+    description: "Climbing the ranks of search results with content and ads that captivate and convert.",
     href: "/seo-ads",
   },
   {
     icon: Star,
     title: "Influencer Marketing",
-    description: "Collaborating with stars of the digital world to amplify your message and build authentic connections.",
+    description: "Collaborating with digital stars to amplify your message and build authentic connections.",
     href: "/influencer-marketing",
-  },
-  {
-    icon: Camera,
-    title: "Photo, Video shoot and editing",
-    description: "Capturing your brand's best moments with professional photography and videography services.",
-    href: "/photo-video-editing",
-  },
-  {
-    icon: FileText,
-    title: "Content Marketing",
-    description: "Blogs, captions, marketing copies, strategy.",
-    href: "/content-marketing",
-  },
-  {
-    icon: Mail,
-    title: "Email Marketing",
-    description: "Design + Automation + Bulk Email Tools.",
-    href: "/email-marketing",
-  },
-  {
-    icon: Users,
-    title: "Online Reputation Management (ORM)",
-    description: "Reviews, ratings, Google listing.",
-    href: "/online-reputation-management",
-  },
-  {
-    icon: GanttChartSquare,
-    title: "Lead Generation Campaigns",
-    description: "Funnel + Ads + WhatsApp lead setup.",
-    href: "/lead-generation",
-  },
-  {
-    icon: BarChart2,
-    title: "Analytics & Conversion Tracking",
-    description: "Google Analytics, GTM, Pixel setup.",
-    href: "/analytics-tracking",
-  },
-  {
-    icon: MessageCircle,
-    title: "WhatsApp & SMS Marketing",
-    description: "Bulk message campaigns.",
-    href: "/whatsapp-sms-marketing",
-  },
-  {
-    icon: Link2,
-    title: "Affiliate Marketing Setup",
-    description: "Affiliate tracking system & creatives.",
-    href: "/affiliate-marketing",
-  },
-  {
-    icon: Filter,
-    title: "Funnel Building & Automation",
-    description: "Landing page + Email/WA Automation.",
-    href: "/funnel-building",
-  },
-  {
-    icon: Mic,
-    title: "Podcast Distribution & Promotion",
-    description: "Upload, SEO, thumbnails, platform setup.",
-    href: "/podcast-promotion",
-  },
-  {
-    icon: Youtube,
-    title: "YouTube Marketing & Optimization",
-    description: "Channel growth, SEO, thumbnails, titles.",
-    href: "/youtube-marketing",
-  },
-  {
-    icon: PencilRuler,
-    title: "Blog Writing & SEO Articles",
-    description: "1000+ words SEO-friendly blog posts.",
-    href: "/blog-writing",
-  },
-  {
-    icon: Store,
-    title: "E-Commerce Store Marketing",
-    description: "Flipkart/Amazon/Shopify promotion.",
-    href: "/ecommerce-marketing",
-  },
-  {
-    icon: FileImage,
-    title: "Ad Creatives Production (Graphics/Video)",
-    description: "Videos, banners, carousels, motion design.",
-    href: "/ad-creatives",
-  },
-  {
-    icon: PhoneCall,
-    title: "Digital Strategy & Consultation",
-    description: "1-on-1 call + roadmap + tools + competitor analysis.",
-    href: "/digital-strategy",
   },
 ];
 
 const ServiceCard = ({ service }: { service: typeof services[0] }) => {
-    const cardContent = (
+    return (
+      <Link href={service.href} className="group block h-full">
         <Card className="group bg-card hover:bg-secondary/50 border-border hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-primary/20 h-full flex flex-col">
           <CardHeader className="flex flex-row items-center gap-4">
             <div className="bg-primary/10 p-3 rounded-lg">
               <service.icon className="h-6 w-6 text-accent" />
             </div>
-            <CardTitle className="font-headline text-lg">{service.title}</CardTitle>
+            <CardTitle className="font-headline text-lg group-hover:text-accent transition-colors">{service.title}</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow flex flex-col justify-between">
-            <p className="text-foreground/80">{service.description}</p>
-            <div className="flex gap-2 mt-4">
-                {service.href && service.href !== "#" && (
-                    <Button asChild variant="link" className="p-0 text-accent font-semibold flex items-center gap-2">
-                        <Link href={service.href}>
-                            Learn More <ArrowRight className="h-4 w-4" />
-                        </Link>
-                    </Button>
-                )}
-                 <Button asChild variant="link" className="p-0 text-accent/80 font-semibold flex items-center gap-2">
-                    <Link href="/pricing">
-                        View Pricing <ArrowRight className="h-4 w-4" />
-                    </Link>
-                </Button>
+            <div>
+                <p className="text-foreground/80">{service.description}</p>
+            </div>
+            <div className="flex items-center gap-2 mt-4 text-accent font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Learn More <ArrowRight className="h-4 w-4" />
             </div>
           </CardContent>
         </Card>
+      </Link>
     );
-
-    return (
-        <div className="flex">
-            {cardContent}
-        </div>
-    )
 };
 
 export function Services() {
@@ -175,13 +73,20 @@ export function Services() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Universe of Services</h2>
           <p className="mt-4 text-foreground/80">
-            We offer a comprehensive suite of services designed to launch your brand into the stratosphere.
+            We offer a comprehensive suite of digital marketing services designed to launch your brand into the stratosphere.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} />
           ))}
+        </div>
+        <div className="text-center mt-12">
+            <Button asChild variant="outline">
+              <Link href="/pricing">
+                View All Services & Pricing <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
         </div>
       </div>
     </section>

@@ -1,12 +1,13 @@
+
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const values = [
-  "Cosmic-level Creativity",
-  "Data-driven Strategies",
-  "Client-centric Universe",
-  "Transparent Constellations",
+  "Cosmic Creativity",
+  "Data-Driven Strategy",
+  "Client-Centric Universe",
+  "Transparent Communication",
 ];
 
 export function About() {
@@ -15,9 +16,9 @@ export function About() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Bringing cosmic-level creativity to earthly brands.</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Igniting Brands with Cosmic Creativity & Data-Driven Strategy.</h2>
             <p className="text-foreground/80">
-              At Morningstar Media, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a team of dreamers, strategists, and creators dedicated to making your brand shine its brightest.
+              At StellarBrand, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a passionate team of strategists, creators, and innovators dedicated to making your brand shine its brightest in the digital cosmos.
             </p>
             <div className="space-y-4">
               <h3 className="font-headline text-xl font-semibold">Our Core Values</h3>
@@ -36,7 +37,7 @@ export function About() {
               <CardContent className="p-0">
                 <Image
                   src="https://placehold.co/600x600.png"
-                  alt="Abstract cosmic art"
+                  alt="Abstract digital art representing a colorful galaxy or nebula."
                   data-ai-hint="abstract galaxy"
                   width={600}
                   height={600}

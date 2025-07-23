@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,44 +8,52 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const caseStudies = [
   {
     client: "Nebula Inc.",
-    title: "Rebranding a Tech Giant",
-    description: "A complete brand overhaul, resulting in a 200% increase in brand recognition and a 50% uplift in conversions.",
+    title: "Rebranding a Global Tech Leader",
+    description: "A complete brand overhaul and website redesign, resulting in a 200% increase in brand recognition and a 50% uplift in qualified leads.",
     image: "https://placehold.co/600x400.png",
     aiHint: "corporate branding",
+    altText: "A modern website design for a tech company called Nebula Inc."
   },
   {
     client: "Galaxy Foods",
-    title: "Viral Social Media Campaign",
-    description: "Launched a multi-platform campaign that reached 10 million users and boosted sales by 75% in one quarter.",
+    title: "Viral Social Media & Influencer Campaign",
+    description: "Launched a multi-platform campaign that reached 10 million users, boosted sales by 75% in one quarter, and won a marketing award.",
     image: "https://placehold.co/600x400.png",
     aiHint: "social media campaign",
+    altText: "A collage of social media posts for a food brand called Galaxy Foods."
   },
 ];
 
 const testimonials = [
   {
-    quote: "Morningstar Media took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled.",
+    quote: "StellarBrand took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled. The results were simply outstanding.",
     name: "Alex Starr",
     title: "CEO of Nebula Inc.",
     avatar: "https://placehold.co/100x100.png",
     logo: "https://placehold.co/120x40.png",
-    aiHint: "man portrait"
+    aiHint: "man portrait",
+    altAvatar: "Portrait of Alex Starr",
+    altLogo: "Logo of Nebula Inc."
   },
   {
-    quote: "The results speak for themselves. Our ROI has never been better. Truly a team of marketing rockstars.",
+    quote: "The ROI from their performance marketing campaigns has been phenomenal. Truly a team of marketing rockstars who understand our business.",
     name: "Brenda Orbit",
     title: "CMO of Galaxy Foods",
     avatar: "https://placehold.co/100x100.png",
     logo: "https://placehold.co/120x40.png",
-    aiHint: "woman portrait"
+    aiHint: "woman portrait",
+    altAvatar: "Portrait of Brenda Orbit",
+    altLogo: "Logo of Galaxy Foods"
   },
   {
-    quote: "Working with them was a breeze. They understood our needs perfectly and delivered beyond expectations.",
+    quote: "Working with them was a seamless experience. They understood our complex needs perfectly and delivered beyond our highest expectations.",
     name: "Chris Comet",
     title: "Founder of AstroLaunch",
     avatar: "https://placehold.co/100x100.png",
     logo: "https://placehold.co/120x40.png",
-    aiHint: "person portrait"
+    aiHint: "person portrait",
+    altAvatar: "Portrait of Chris Comet",
+    altLogo: "Logo of AstroLaunch"
   },
 ];
 
@@ -55,7 +64,7 @@ export function Portfolio() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Success Stories from Our Constellation</h2>
           <p className="mt-4 text-foreground/80">
-            We've helped brands of all sizes reach for the stars. Here's a glimpse of our work.
+            We've helped ambitious brands of all sizes reach for the stars. Here's a glimpse of our universe of work.
           </p>
         </div>
 
@@ -65,7 +74,7 @@ export function Portfolio() {
               <CardContent className="p-0">
                 <Image
                   src={study.image}
-                  alt={`Case study for ${study.client}`}
+                  alt={study.altText}
                   data-ai-hint={study.aiHint}
                   width={600}
                   height={400}
@@ -73,10 +82,10 @@ export function Portfolio() {
                 />
               </CardContent>
               <div className="p-6">
-                <h3 className="font-headline text-xl font-bold">{study.title}</h3>
-                <p className="text-sm text-accent font-medium mt-1">{study.client}</p>
+                <p className="text-sm text-accent font-medium">{study.client}</p>
+                <h3 className="font-headline text-xl font-bold mt-1">{study.title}</h3>
                 <p className="mt-3 text-foreground/80">{study.description}</p>
-                <Button variant="link" className="p-0 mt-4 text-accent">View Case Study</Button>
+                <Button variant="link" className="p-0 mt-4 text-accent">View Case Study &rarr;</Button>
               </div>
             </Card>
           ))}
@@ -98,7 +107,7 @@ export function Portfolio() {
                                         <div className="mt-6 flex items-center justify-between">
                                           <div className="flex items-center gap-4">
                                               <Avatar>
-                                                  <AvatarImage src={testimonial.avatar} alt={testimonial.name} data-ai-hint={testimonial.aiHint} />
+                                                  <AvatarImage src={testimonial.avatar} alt={testimonial.altAvatar} data-ai-hint={testimonial.aiHint} />
                                                   <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                                               </Avatar>
                                               <div>
@@ -106,7 +115,7 @@ export function Portfolio() {
                                                   <p className="text-xs text-foreground/70">{testimonial.title}</p>
                                               </div>
                                           </div>
-                                          <Image src={testimonial.logo} alt="Client logo" width={80} height={30} data-ai-hint="company logo" className="opacity-60"/>
+                                          <Image src={testimonial.logo} alt={testimonial.altLogo} width={80} height={30} data-ai-hint="company logo" className="opacity-60"/>
                                         </div>
                                     </CardContent>
                                 </Card>

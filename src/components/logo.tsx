@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import { Sparkles } from "lucide-react";
 
@@ -16,7 +17,7 @@ export function Logo({ className, isFooter = false }: LogoProps) {
       )}
     >
       <Sparkles className="text-accent h-6 w-6" />
-      <span>Morningstar Media</span>
+      <span>StellarBrand</span>
     </div>
   );
 }

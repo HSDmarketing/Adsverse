@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
@@ -7,9 +8,9 @@ import { Footer } from '@/components/layout/footer';
 import { FloatingCta } from '@/components/layout/floating-cta';
 
 export const metadata: Metadata = {
-  title: 'Morningstar Media - Where Brands Rise First',
-  description: 'Morningstar Media: A creative marketing agency that transforms your brand into a shining star.',
-  keywords: ['marketing agency', 'brand strategy', 'social media', 'performance marketing', 'seo', 'web design'],
+  title: 'StellarBrand - Digital Marketing Agency for Growth',
+  description: 'StellarBrand is a results-driven digital marketing agency specializing in brand strategy, SEO, performance marketing, and social media to elevate your brand.',
+  keywords: ['digital marketing agency', 'brand strategy', 'social media management', 'performance marketing', 'seo services', 'website design'],
 };
 
 export default function RootLayout({

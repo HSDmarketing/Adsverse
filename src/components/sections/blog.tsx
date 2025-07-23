@@ -13,6 +13,7 @@ const posts = [
     image: "https://placehold.co/600x400.png",
     aiHint: "ai abstract",
     href: "/blog/future-of-ai-in-marketing",
+    altText: "An abstract visualization of an AI neural network with glowing nodes."
   },
   {
     title: "5 SEO Trends to Watch in 2025",
@@ -22,6 +23,7 @@ const posts = [
     image: "https://placehold.co/600x400.png",
     aiHint: "data chart",
     href: "/blog/5-seo-trends-to-watch-in-2025",
+    altText: "An abstract data chart showing upward trends, representing SEO growth."
   },
   {
     title: "Crafting a Brand Story That Resonates",
@@ -31,6 +33,7 @@ const posts = [
     image: "https://placehold.co/600x400.png",
     aiHint: "person writing",
     href: "/blog/crafting-a-brand-story-that-resonates",
+    altText: "A person writing a brand story in a journal, with a cup of coffee nearby."
   },
 ];
 
@@ -41,7 +44,7 @@ export function Blog() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Insights from Our Universe</h2>
           <p className="mt-4 text-foreground/80">
-            Stay informed with the latest news, trends, and thoughts from the marketing cosmos.
+            Stay informed with the latest news, trends, and strategies from the marketing cosmos.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,7 +54,7 @@ export function Blog() {
                 <CardHeader className="p-0">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={post.altText}
                     data-ai-hint={post.aiHint}
                     width={600}
                     height={400}
@@ -63,7 +66,7 @@ export function Blog() {
                     <Badge variant="outline">{post.category}</Badge>
                     <p>{post.date}</p>
                   </div>
-                  <h3 className="font-headline text-xl font-semibold mt-4">{post.title}</h3>
+                  <h3 className="font-headline text-xl font-semibold mt-4 group-hover:text-accent transition-colors">{post.title}</h3>
                   <p className="mt-2 text-foreground/80 text-sm flex-grow">{post.excerpt}</p>
                   <div className="mt-4 text-accent font-semibold group-hover:underline">
                     Read More &rarr;

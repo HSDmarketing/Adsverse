@@ -1,10 +1,11 @@
+
 import { CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Performance Marketing - Morningstar Media',
-    description: 'At Morningstar Media, our Performance Marketing approach is built on strategy, creativity, and precision. We turn your budget into meaningful business outcomes.',
+    title: 'Performance Marketing Agency | StellarBrand',
+    description: 'Results-driven performance marketing services. We manage data-backed ad campaigns on Meta (Facebook, Instagram) and Google to deliver measurable ROI.',
 };
 
 export default function PerformanceMarketingPage() {
@@ -17,69 +18,66 @@ export default function PerformanceMarketingPage() {
                             Performance Marketing
                         </h1>
                         <p className="mt-4 text-lg md:text-xl text-foreground/80">
-                            Targeted. Tactical. Transformative.
+                            Targeted. Tactical. Transformative. Data-Driven Ads That Deliver ROI.
                         </p>
                     </header>
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In the vast universe of online advertising, we help your brand cut through the noise and land exactly where it needs to be — in front of the right audience, at the right time, with the right message.
+                            In the vast universe of online advertising, performance marketing is the science of turning clicks into customers. It's about ensuring every dollar spent is an investment in measurable growth. At StellarBrand, our performance marketing approach is built on a foundation of rigorous strategy, compelling creative, and precision targeting.
                         </p>
                         <p>
-                           At Morningstar Media, our Performance Marketing approach is built on strategy, creativity, and precision. From launching high-converting ad campaigns to optimizing every click, we turn your budget into meaningful business outcomes.
-                        </p>
-                         <p>
-                            We manage data-backed ad campaigns across platforms like Facebook, Instagram, and Google, focused on one thing: delivering real results.
+                           We manage data-backed ad campaigns across platforms like Meta (Facebook & Instagram) and Google, focusing relentlessly on one thing: delivering real, tangible results for your business.
                         </p>
 
                         <div>
                             <h2 className="font-headline text-3xl font-bold text-foreground/90 flex items-center gap-3">
-                                🌠 Our Performance Marketing Services:
+                                🌠 Our Performance Marketing Services
                             </h2>
                             <ul className="mt-6 space-y-4">
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
                                         <h3 className="font-semibold text-foreground">Meta Ads (Facebook & Instagram)</h3>
-                                        <p>Engaging creatives and strategic targeting to generate leads, boost sales, and drive traffic where it matters.</p>
+                                        <p>We craft engaging ad creatives and utilize advanced targeting to generate leads, boost e-commerce sales, and drive high-quality traffic where it matters most.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Google Search & Display Ads</h3>
-                                        <p>Reach high-intent customers through keyword-optimized search ads and attention-grabbing display placements.</p>
+                                        <h3 className="font-semibold text-foreground">Google Ads (Search, Display, YouTube)</h3>
+                                        <p>Capture high-intent customers with keyword-optimized search ads, visually compelling display campaigns, and engaging YouTube ads.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Conversion-Focused Campaigns</h3>
-                                        <p>Every campaign is designed to maximize ROI with compelling CTAs, optimized landing pages, and smart funnel building.</p>
+                                        <h3 className="font-semibold text-foreground">Full-Funnel Campaign Strategy</h3>
+                                        <p>Every campaign is architected to maximize ROI, with optimized landing pages, strategic retargeting, and a focus on driving profitable conversions.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">A/B Testing & Optimization</h3>
-                                        <p>We continuously test creatives, audiences, and messaging to find what performs best — and scale it.</p>
+                                        <h3 className="font-semibold text-foreground">Continuous A/B Testing & Optimization</h3>
+                                        <p>We relentlessly test creatives, audiences, ad copy, and landing pages to identify what performs best—and then we scale it for maximum impact.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">In-Depth Reporting</h3>
-                                        <p>Transparent, easy-to-understand dashboards and reports that show exactly how your campaigns are performing and where we’re improving.</p>
+                                        <h3 className="font-semibold text-foreground">Transparent, In-Depth Reporting</h3>
+                                        <p>We provide clear, easy-to-understand dashboards and reports that show exactly how your campaigns are performing and how we’re improving them.</p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="text-center border-t border-border pt-8 mt-12">
-                            <p className="text-xl">Let your brand shine where it matters most.</p>
-                            <p className="mt-2">With Morningstar Media, Performance Marketing isn’t just about spending money — it’s about growing smarter, faster, and farther.</p>
+                            <p className="text-xl">Let your ad spend work smarter, not harder.</p>
+                            <p className="mt-2">With StellarBrand, performance marketing isn’t just about spending money—it’s about growing smarter, faster, and farther.</p>
                              <p className="mt-6 text-2xl">
-                                🚀 Ready to boost your ROI? <Link href="/#contact" className="text-accent hover:underline">Let's discuss your campaign.</Link>
+                                🚀 Ready to boost your ROI? <Link href="/#contact" className="text-accent hover:underline">Let's discuss your next campaign.</Link>
                             </p>
                         </div>
                     </div>

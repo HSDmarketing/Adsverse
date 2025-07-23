@@ -6,8 +6,8 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Crafting a Brand Story That Resonates - Morningstar Media',
-  description: 'Learn the art of storytelling to create a powerful and memorable brand identity that connects with your audience.',
+  title: 'How to Craft a Brand Story That Resonates | StellarBrand',
+  description: 'Learn the art of brand storytelling to forge a powerful and memorable connection with your audience. Discover the key elements of a story that sells.',
 };
 
 export default function BrandStoryPage() {
@@ -33,7 +33,7 @@ export default function BrandStoryPage() {
 
             <Image
               src="https://placehold.co/1200x600.png"
-              alt="Person writing in a journal"
+              alt="A person writing a brand story in a journal, with a cup of coffee nearby."
               data-ai-hint="person writing"
               width={1200}
               height={600}
@@ -47,7 +47,7 @@ export default function BrandStoryPage() {
 
               <h2 className="font-headline text-3xl font-bold text-foreground/90">What is a Brand Story?</h2>
               <p>
-                Your brand story is the cohesive narrative that encompasses the facts and feelings created by your brand. Unlike traditional advertising, which is about showing and telling, brand storytelling is about connecting with your audience on an emotional level. It's the 'why' behind your 'what'.
+                Your brand story is the cohesive narrative that encompasses the facts and, more importantly, the feelings your brand evokes. Unlike traditional advertising, which is about showing and telling, brand storytelling is about forging an emotional connection with your audience. It's the 'why' behind your 'what'.
               </p>
 
               <h2 className="font-headline text-3xl font-bold text-foreground/90">The Key Elements of a Powerful Story</h2>
@@ -55,18 +55,17 @@ export default function BrandStoryPage() {
                 A great brand story has a clear hero, a formidable challenge, and a triumphant resolution that aligns with the customer's own aspirations.
               </blockquote>
 
-              <ul className="space-y-2">
-                  <li className="flex items-start gap-3"><strong className="text-accent">The Hero:</strong> Your customer is the hero, not your brand. Your brand is the guide or the mentor that helps them overcome their challenge.</li>
-                  <li className="flex items-start gap-3"><strong className="text-accent">The Goal:</strong> What does the hero want to achieve? This should be a clear and relatable aspiration.</li>
-                  <li className="flex items-start gap-3"><strong className="text-accent">The Obstacle:</strong> What stands in the hero's way? This conflict is the heart of the story.</li>
-                  <li className="flex items-start gap-3"><strong className="text-accent">The Mentor:</strong> This is your brand's role. How do you equip the hero to succeed?</li>
-                  <li className="flex items-start gap-3"><strong className="text-accent">The Resolution:</strong> Show the hero's transformation and success, made possible by your brand.</li>
+              <ul className="space-y-4">
+                  <li className="flex items-start gap-3"><strong className="text-accent">The Hero:</strong> Your customer is the hero, not your brand. Your brand should act as the wise guide or mentor that helps them overcome their challenge.</li>
+                  <li className="flex items-start gap-3"><strong className="text-accent">The Goal:</strong> What does the hero want to achieve? This should be a clear, relatable, and powerful aspiration.</li>
+                  <li className="flex items-start gap-3"><strong className="text-accent">The Obstacle:</strong> What stands in the hero's way? This conflict is the heart of the story and makes the final resolution more satisfying.</li>
+                  <li className="flex items-start gap-3"><strong className="text-accent">The Mentor (Your Brand):</strong> This is your role. How do you equip the hero with the tools, knowledge, or confidence to succeed?</li>
+                  <li className="flex items-start gap-3"><strong className="text-accent">The Resolution:</strong> Show the hero's transformation and success, made possible through your brand's guidance. This reinforces your value.</li>
               </ul>
               
-
               <h2 className="font-headline text-3xl font-bold text-foreground/90">Authenticity is Everything</h2>
               <p>
-                The most resonant brand stories are rooted in authenticity. Your story should be an honest reflection of your company's mission and values. Consumers can spot a disingenuous narrative from a mile away. Be genuine, be vulnerable, and share the human side of your brand—the struggles, the triumphs, and the core beliefs that drive you forward.
+                The most resonant brand stories are rooted in authenticity. Your story must be an honest reflection of your company's mission and values. Modern consumers can spot a disingenuous narrative from a mile away. Be genuine, be vulnerable, and share the human side of your brand—the struggles, the triumphs, and the core beliefs that drive you forward.
               </p>
               
               <p className="font-semibold text-foreground/90">

@@ -37,13 +37,15 @@ export function Contact() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
+    const formData = new FormData();
+    Object.entries(values).forEach(([key, value]) => {
+        formData.append(key, value);
+    });
+
     try {
       const response = await fetch("https://script.google.com/macros/s/AKfycbxVKzV4JYTrlV-s-a1tglwK_-M_luda5e9k7IGtAWbF2wbTuahrJbul73DKFo1WZJp9/exec", {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(values as any).toString()
+        body: formData,
       });
 
       if (response.ok) {
@@ -53,11 +55,10 @@ export function Contact() {
         });
         form.reset();
       } else {
-        const result = await response.json();
         toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",
-          description: result.message || "There was a problem with your request.",
+          description: "There was a problem with your request.",
         });
       }
     } catch (error) {

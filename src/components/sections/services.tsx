@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight, Camera, FileText, Mail, Users, BarChart2, MessageCircle, Link2, Filter, Mic, Youtube, PencilRuler, Store, FileImage, GanttChartSquare, PhoneCall } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const services = [
   {
@@ -48,107 +49,128 @@ const services = [
   {
     icon: FileText,
     title: "Content Marketing",
-    description: "Blogs, captions, marketing copies, strategy. (Starts at ₹999/post)",
+    description: "Blogs, captions, marketing copies, strategy.",
     href: "#",
   },
   {
     icon: Mail,
     title: "Email Marketing",
-    description: "Design + Automation + Bulk Email Tools. (Starts at ₹1,999/month)",
+    description: "Design + Automation + Bulk Email Tools.",
     href: "#",
   },
   {
     icon: Users,
     title: "Online Reputation Management (ORM)",
-    description: "Reviews, ratings, Google listing. (Starts at ₹3,999/month)",
+    description: "Reviews, ratings, Google listing.",
     href: "#",
   },
   {
     icon: GanttChartSquare,
     title: "Lead Generation Campaigns",
-    description: "Funnel + Ads + WhatsApp lead setup. (Starts at ₹4,999/campaign)",
+    description: "Funnel + Ads + WhatsApp lead setup.",
     href: "#",
   },
   {
     icon: BarChart2,
     title: "Analytics & Conversion Tracking",
-    description: "Google Analytics, GTM, Pixel setup. (Starts at ₹2,999/setup)",
+    description: "Google Analytics, GTM, Pixel setup.",
     href: "#",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp & SMS Marketing",
-    description: "Bulk message campaigns. (Starts at ₹1,999/month)",
+    description: "Bulk message campaigns.",
     href: "#",
   },
   {
     icon: Link2,
     title: "Affiliate Marketing Setup",
-    description: "Affiliate tracking system & creatives. (Starts at ₹4,999/project)",
+    description: "Affiliate tracking system & creatives.",
     href: "#",
   },
   {
     icon: Filter,
     title: "Funnel Building & Automation",
-    description: "Landing page + Email/WA Automation. (Starts at ₹3,999/funnel)",
+    description: "Landing page + Email/WA Automation.",
     href: "#",
   },
   {
     icon: Mic,
     title: "Podcast Distribution & Promotion",
-    description: "Upload, SEO, thumbnails, platform setup. (Starts at ₹2,999/episode)",
+    description: "Upload, SEO, thumbnails, platform setup.",
     href: "#",
   },
   {
     icon: Youtube,
     title: "YouTube Marketing & Optimization",
-    description: "Channel growth, SEO, thumbnails, titles. (Starts at ₹2,499/video)",
+    description: "Channel growth, SEO, thumbnails, titles.",
     href: "#",
   },
   {
     icon: PencilRuler,
     title: "Blog Writing & SEO Articles",
-    description: "1000+ words SEO-friendly blog posts. (Starts at ₹999/article)",
+    description: "1000+ words SEO-friendly blog posts.",
     href: "#",
   },
   {
     icon: Store,
     title: "E-Commerce Store Marketing",
-    description: "Flipkart/Amazon/Shopify promotion. (Starts at ₹6,999/month)",
+    description: "Flipkart/Amazon/Shopify promotion.",
     href: "#",
   },
   {
     icon: FileImage,
     title: "Ad Creatives Production (Graphics/Video)",
-    description: "Videos, banners, carousels, motion design. (Starts at ₹1,499/ad)",
+    description: "Videos, banners, carousels, motion design.",
     href: "#",
   },
   {
     icon: PhoneCall,
     title: "Digital Strategy & Consultation",
-    description: "1-on-1 call + roadmap + tools + competitor analysis. (Starts at ₹999/session)",
+    description: "1-on-1 call + roadmap + tools + competitor analysis.",
     href: "#",
   },
 ];
 
-const ServiceCard = ({ service }: { service: typeof services[0] }) => (
-    <Card className="group bg-card hover:bg-secondary/50 border-border hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-primary/20">
-      <CardHeader className="flex flex-row items-center gap-4">
-        <div className="bg-primary/10 p-3 rounded-lg">
-          <service.icon className="h-6 w-6 text-accent" />
-        </div>
-        <CardTitle className="font-headline text-lg">{service.title}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p className="text-foreground/80">{service.description}</p>
-        {service.href && service.href !== "#" && (
-            <div className="mt-4 text-accent font-semibold flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Learn More <ArrowRight className="h-4 w-4" />
+const ServiceCard = ({ service }: { service: typeof services[0] }) => {
+    const cardContent = (
+        <Card className="group bg-card hover:bg-secondary/50 border-border hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-primary/20 h-full flex flex-col">
+          <CardHeader className="flex flex-row items-center gap-4">
+            <div className="bg-primary/10 p-3 rounded-lg">
+              <service.icon className="h-6 w-6 text-accent" />
             </div>
-        )}
-      </CardContent>
-    </Card>
-);
+            <CardTitle className="font-headline text-lg">{service.title}</CardTitle>
+          </CardHeader>
+          <CardContent className="flex-grow flex flex-col justify-between">
+            <p className="text-foreground/80">{service.description}</p>
+            <div className="flex gap-2 mt-4">
+                {service.href && service.href !== "#" && (
+                    <Button asChild variant="link" className="p-0 text-accent font-semibold flex items-center gap-2">
+                        <Link href={service.href}>
+                            Learn More <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </Button>
+                )}
+                 <Button asChild variant="link" className="p-0 text-accent/80 font-semibold flex items-center gap-2">
+                    <Link href="/pricing">
+                        View Pricing <ArrowRight className="h-4 w-4" />
+                    </Link>
+                </Button>
+            </div>
+          </CardContent>
+        </Card>
+    );
+
+    if (service.href && service.href !== "#") {
+        return (
+            <div className="flex">
+                {cardContent}
+            </div>
+        )
+    }
+    
+    return cardContent;
+};
 
 export function Services() {
   return (
@@ -161,15 +183,9 @@ export function Services() {
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) =>
-            service.href && service.href !== "#" ? (
-              <Link href={service.href} key={index} className="flex">
-                <ServiceCard service={service} />
-              </Link>
-            ) : (
-              <ServiceCard key={index} service={service} />
-            )
-          )}
+          {services.map((service, index) => (
+            <ServiceCard key={index} service={service} />
+          ))}
         </div>
       </div>
     </section>

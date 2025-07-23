@@ -50,85 +50,85 @@ const services = [
     icon: FileText,
     title: "Content Marketing",
     description: "Blogs, captions, marketing copies, strategy.",
-    href: "#",
+    href: "/content-marketing",
   },
   {
     icon: Mail,
     title: "Email Marketing",
     description: "Design + Automation + Bulk Email Tools.",
-    href: "#",
+    href: "/email-marketing",
   },
   {
     icon: Users,
     title: "Online Reputation Management (ORM)",
     description: "Reviews, ratings, Google listing.",
-    href: "#",
+    href: "/online-reputation-management",
   },
   {
     icon: GanttChartSquare,
     title: "Lead Generation Campaigns",
     description: "Funnel + Ads + WhatsApp lead setup.",
-    href: "#",
+    href: "/lead-generation",
   },
   {
     icon: BarChart2,
     title: "Analytics & Conversion Tracking",
     description: "Google Analytics, GTM, Pixel setup.",
-    href: "#",
+    href: "/analytics-tracking",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp & SMS Marketing",
     description: "Bulk message campaigns.",
-    href: "#",
+    href: "/whatsapp-sms-marketing",
   },
   {
     icon: Link2,
     title: "Affiliate Marketing Setup",
     description: "Affiliate tracking system & creatives.",
-    href: "#",
+    href: "/affiliate-marketing",
   },
   {
     icon: Filter,
     title: "Funnel Building & Automation",
     description: "Landing page + Email/WA Automation.",
-    href: "#",
+    href: "/funnel-building",
   },
   {
     icon: Mic,
     title: "Podcast Distribution & Promotion",
     description: "Upload, SEO, thumbnails, platform setup.",
-    href: "#",
+    href: "/podcast-promotion",
   },
   {
     icon: Youtube,
     title: "YouTube Marketing & Optimization",
     description: "Channel growth, SEO, thumbnails, titles.",
-    href: "#",
+    href: "/youtube-marketing",
   },
   {
     icon: PencilRuler,
     title: "Blog Writing & SEO Articles",
     description: "1000+ words SEO-friendly blog posts.",
-    href: "#",
+    href: "/blog-writing",
   },
   {
     icon: Store,
     title: "E-Commerce Store Marketing",
     description: "Flipkart/Amazon/Shopify promotion.",
-    href: "#",
+    href: "/ecommerce-marketing",
   },
   {
     icon: FileImage,
     title: "Ad Creatives Production (Graphics/Video)",
     description: "Videos, banners, carousels, motion design.",
-    href: "#",
+    href: "/ad-creatives",
   },
   {
     icon: PhoneCall,
     title: "Digital Strategy & Consultation",
     description: "1-on-1 call + roadmap + tools + competitor analysis.",
-    href: "#",
+    href: "/digital-strategy",
   },
 ];
 
@@ -161,15 +161,11 @@ const ServiceCard = ({ service }: { service: typeof services[0] }) => {
         </Card>
     );
 
-    if (service.href && service.href !== "#") {
-        return (
-            <div className="flex">
-                {cardContent}
-            </div>
-        )
-    }
-    
-    return cardContent;
+    return (
+        <div className="flex">
+            {cardContent}
+        </div>
+    )
 };
 
 export function Services() {

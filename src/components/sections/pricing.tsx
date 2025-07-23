@@ -3,8 +3,9 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const plans = [
   {
@@ -91,6 +92,13 @@ export function Pricing() {
                 </CardFooter>
               </Card>
           ))}
+        </div>
+        <div className="text-center mt-12">
+            <Button asChild variant="outline">
+              <Link href="/pricing">
+                View All Services & Detailed Pricing <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
         </div>
       </div>
     </section>

@@ -31,18 +31,21 @@ export function FloatingCta() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      // Show CTA when scrolled down 100px
-      if (window.pageYOffset > 100) {
+    // We can't know the scroll position on the server, so we check it on the client.
+    // This will run after hydration.
+    const checkScroll = () => {
+       if (window.pageYOffset > 100) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    };
+    }
+    // Run it once to set initial state
+    checkScroll();
 
-    window.addEventListener("scroll", toggleVisibility);
-
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    // Then add the listener
+    window.addEventListener("scroll", checkScroll);
+    return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 
   return (

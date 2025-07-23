@@ -34,7 +34,7 @@ const serviceTiers = [
             { name: 'E-Commerce Store Marketing', price: '$89/month', description: 'Flipkart/Amazon/Shopify promotion' },
             { name: 'Landing Page Design + CRO', price: '$49/page', description: 'High-converting single-page website' },
             { name: 'Ad Creatives Production (Graphics/Video)', price: '$19/ad', description: 'Videos, banners, carousels, motion design' },
-            { name: 'Digital Strategy & Consultation', price: '$12/session', description: '1-on-1 call + roadmap + tools + competitor analysis' },
+            { name: 'Digital Strategy & Consultation', price: '$0/session', description: '1-on-1 call + roadmap + tools + competitor analysis' },
         ],
     },
     {

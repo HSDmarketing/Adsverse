@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight, Camera } from "lucide-react";
+import { Crown, Share2, Target, MonitorSmartphone, PenTool, Star, ArrowRight, Camera, FileText, Mail, Users, BarChart2, MessageCircle, Link2, Filter, Mic, Youtube, PencilRuler, Store, FileImage, GanttChartSquare, PhoneCall } from "lucide-react";
 import Link from "next/link";
 
 const services = [
@@ -44,6 +44,90 @@ const services = [
     title: "Photo, Video shoot and editing",
     description: "Capturing your brand's best moments with professional photography and videography services.",
     href: "/photo-video-editing",
+  },
+  {
+    icon: FileText,
+    title: "Content Marketing",
+    description: "Blogs, captions, marketing copies, strategy. (Starts at ₹999/post)",
+    href: "#",
+  },
+  {
+    icon: Mail,
+    title: "Email Marketing",
+    description: "Design + Automation + Bulk Email Tools. (Starts at ₹1,999/month)",
+    href: "#",
+  },
+  {
+    icon: Users,
+    title: "Online Reputation Management (ORM)",
+    description: "Reviews, ratings, Google listing. (Starts at ₹3,999/month)",
+    href: "#",
+  },
+  {
+    icon: GanttChartSquare,
+    title: "Lead Generation Campaigns",
+    description: "Funnel + Ads + WhatsApp lead setup. (Starts at ₹4,999/campaign)",
+    href: "#",
+  },
+  {
+    icon: BarChart2,
+    title: "Analytics & Conversion Tracking",
+    description: "Google Analytics, GTM, Pixel setup. (Starts at ₹2,999/setup)",
+    href: "#",
+  },
+  {
+    icon: MessageCircle,
+    title: "WhatsApp & SMS Marketing",
+    description: "Bulk message campaigns. (Starts at ₹1,999/month)",
+    href: "#",
+  },
+  {
+    icon: Link2,
+    title: "Affiliate Marketing Setup",
+    description: "Affiliate tracking system & creatives. (Starts at ₹4,999/project)",
+    href: "#",
+  },
+  {
+    icon: Filter,
+    title: "Funnel Building & Automation",
+    description: "Landing page + Email/WA Automation. (Starts at ₹3,999/funnel)",
+    href: "#",
+  },
+  {
+    icon: Mic,
+    title: "Podcast Distribution & Promotion",
+    description: "Upload, SEO, thumbnails, platform setup. (Starts at ₹2,999/episode)",
+    href: "#",
+  },
+  {
+    icon: Youtube,
+    title: "YouTube Marketing & Optimization",
+    description: "Channel growth, SEO, thumbnails, titles. (Starts at ₹2,499/video)",
+    href: "#",
+  },
+  {
+    icon: PencilRuler,
+    title: "Blog Writing & SEO Articles",
+    description: "1000+ words SEO-friendly blog posts. (Starts at ₹999/article)",
+    href: "#",
+  },
+  {
+    icon: Store,
+    title: "E-Commerce Store Marketing",
+    description: "Flipkart/Amazon/Shopify promotion. (Starts at ₹6,999/month)",
+    href: "#",
+  },
+  {
+    icon: FileImage,
+    title: "Ad Creatives Production (Graphics/Video)",
+    description: "Videos, banners, carousels, motion design. (Starts at ₹1,499/ad)",
+    href: "#",
+  },
+  {
+    icon: PhoneCall,
+    title: "Digital Strategy & Consultation",
+    description: "1-on-1 call + roadmap + tools + competitor analysis. (Starts at ₹999/session)",
+    href: "#",
   },
 ];
 

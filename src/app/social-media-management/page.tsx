@@ -1,3 +1,4 @@
+
 import { CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -23,10 +24,10 @@ export default function SocialMediaManagementPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In today’s fast-scrolling world, your social media presence isn’t optional — it’s essential. At Morningstar Media, we manage your digital presence like a constellation: every post, comment, and story aligns to form a stellar brand experience.
+                            In today’s fast-scrolling world, your social media presence isn’t optional — it’s your digital storefront, your community hub, and a powerful engine for growth. At Morningstar Media, we manage your presence on platforms like Facebook and Instagram not just to post content, but to build a living, breathing brand experience that resonates with your audience and drives real business results.
                         </p>
                         <p>
-                            We don’t just post — we strategize, curate, and connect. Our team crafts magnetic content and manages your platforms with a pulse on trends, ensuring your brand consistently shines across every screen.
+                            We don’t just post — we strategize, create, engage, and analyze. Our team combines creative storytelling with data-driven tactics to ensure your brand consistently shines across every screen, turning casual followers into loyal advocates.
                         </p>
 
                         <div>
@@ -37,36 +38,36 @@ export default function SocialMediaManagementPage() {
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Platform Strategy &amp; Planning</h3>
-                                        <p>Tailored social media strategies for Instagram, Facebook, LinkedIn, Twitter, YouTube, and more — aligned with your business goals and target audience.</p>
+                                        <h3 className="font-semibold text-foreground">Custom Social Media Strategy</h3>
+                                        <p>We begin by understanding your business goals, target audience, and competitive landscape. We then develop a tailored strategy for platforms like Facebook and Instagram, defining your brand voice, content pillars, and key performance indicators (KPIs) for success.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Content Creation &amp; Curation</h3>
-                                        <p>Scroll-stopping visuals, videos, reels, and carousels that reflect your brand voice and spark engagement.</p>
+                                        <h3 className="font-semibold text-foreground">Content Creation &amp; Posting</h3>
+                                        <p>Our team creates and curates high-quality, scroll-stopping content—including graphics, videos, reels, and carousels—that reflects your brand and sparks conversations. We manage a consistent posting schedule to keep your audience engaged and your feed active.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Community Engagement &amp; Growth</h3>
-                                        <p>We build relationships with your followers through real-time responses, DMs, and comment engagement — turning followers into brand advocates.</p>
+                                        <h3 className="font-semibold text-foreground">Audience Growth &amp; Engagement</h3>
+                                        <p>We actively work to grow your follower base with organic tactics and targeted outreach. More importantly, we build a thriving community by engaging with your audience through comments, DMs, and real-time interactions, fostering loyalty and trust.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
                                         <h3 className="font-semibold text-foreground">Content Calendar Management</h3>
-                                        <p>Plan ahead with organized, data-driven content calendars designed to keep your feed consistent and meaningful.</p>
+                                        <p>Stay ahead with a well-organized, data-driven content calendar. We plan your content weeks in advance, aligning with marketing campaigns, holidays, and trends to ensure a cohesive and impactful social media presence.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold text-foreground">Analytics &amp; Reporting</h3>
-                                        <p>Monthly performance insights, engagement tracking, and optimization recommendations to keep your strategy evolving.</p>
+                                        <h3 className="font-semibold text-foreground">Analytics &amp; Performance Reporting</h3>
+                                        <p>We provide clear, monthly reports that track key metrics like reach, engagement, follower growth, and website clicks. These insights help us continuously refine your strategy and demonstrate the ROI of your social media investment.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -74,9 +75,9 @@ export default function SocialMediaManagementPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your voice echo across the digital universe.</p>
-                            <p className="mt-2">With Morningstar Media, your social presence becomes a living, breathing brand experience — one that inspires, informs, and influences.</p>
+                            <p className="mt-2">With Morningstar Media, your social presence becomes more than just a profile—it becomes a powerful asset for your brand.</p>
                             <p className="mt-6 text-2xl">
-                                🌌 Let’s turn followers into loyal fans. <Link href="/#contact" className="text-accent hover:underline">Book your social media audit today.</Link>
+                                🌌 Ready to turn followers into loyal fans? <Link href="/#contact" className="text-accent hover:underline">Book your social media audit today.</Link>
                             </p>
                         </div>
                     </div>

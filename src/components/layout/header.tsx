@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -14,12 +15,12 @@ import {
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/#services", label: "Services" },
-  { href: "/#portfolio", label: "Our Work" },
-  { href: "/#pricing", label: "Pricing" },
-  { href: "/#blog", label: "Blog" },
-  { href: "/#contact", label: "Contact" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#portfolio", label: "Our Work" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#blog", label: "Blog" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -27,11 +28,7 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   
-  // To prevent hydration mismatch, we'll only check for the homepage on the client
-  const [isHomePage, setIsHomePage] = useState(false);
-  useEffect(() => {
-    setIsHomePage(pathname === '/');
-  }, [pathname]);
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,19 +40,22 @@ export function Header() {
 
   const NavLinkItems = ({ isMobile = false }) => (
     <>
-      {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className={cn(
-            "text-sm font-medium transition-colors hover:text-accent",
-            isMobile ? "block py-3 text-lg" : "text-foreground/80"
-          )}
-          onClick={() => isMobile && setIsMobileMenuOpen(false)}
-        >
-          {link.label}
-        </Link>
-      ))}
+      {navLinks.map((link) => {
+        const href = isHomePage ? link.href : `/${link.href}`;
+        return (
+            <Link
+              key={link.href}
+              href={href}
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-accent",
+                isMobile ? "block py-3 text-lg" : "text-foreground/80"
+              )}
+              onClick={() => isMobile && setIsMobileMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+        )
+      })}
     </>
   );
 
@@ -75,7 +75,7 @@ export function Header() {
         </nav>
         <div className="hidden md:flex items-center gap-4">
           <Button asChild variant="outline">
-            <Link href="/#contact">Book a Call</Link>
+            <Link href={isHomePage ? "#contact" : "/#contact"}>Book a Call</Link>
           </Button>
         </div>
         <div className="md:hidden">
@@ -98,7 +98,7 @@ export function Header() {
                 <nav className="flex flex-col gap-4">
                   <NavLinkItems isMobile />
                   <Button asChild variant="outline" className="mt-4">
-                    <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>Book a Call</Link>
+                    <Link href={isHomePage ? "#contact" : "/#contact"} onClick={() => setIsMobileMenuOpen(false)}>Book a Call</Link>
                   </Button>
                 </nav>
               </div>

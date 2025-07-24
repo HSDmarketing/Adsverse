@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,7 +9,7 @@ import Link from "next/link";
 const plans = [
   {
     name: "Launchpad",
-    price: "499",
+    price: "299",
     description: "For new ventures ready to establish a strong digital foundation and make their mark.",
     features: [
       "Brand Strategy Session",
@@ -23,7 +22,7 @@ const plans = [
   },
   {
     name: "Orbit",
-    price: "999",
+    price: "399",
     description: "The perfect package for growing businesses aiming for a higher trajectory and consistent growth.",
     features: [
       "Everything in Launchpad, plus:",
@@ -36,7 +35,7 @@ const plans = [
   },
   {
     name: "Galaxy",
-    price: "1999",
+    price: "999",
     description: "For established brands ready to dominate their industry and achieve market leadership.",
     features: [
       "Everything in Orbit, plus:",

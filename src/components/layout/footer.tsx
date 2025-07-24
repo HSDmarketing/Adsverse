@@ -41,8 +41,8 @@ const footerLinks = [
     { href: "/#contact", label: "Contact Us" },
   ]},
   { title: "Legal", links: [
-    { href: "#", label: "Privacy Policy" },
-    { href: "#", label: "Terms of Service" },
+    { href: "/privacy-policy", label: "Privacy Policy" },
+    { href: "/terms-of-service", label: "Terms of Service" },
   ]},
 ];
 

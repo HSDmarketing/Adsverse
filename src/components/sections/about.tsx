@@ -36,7 +36,7 @@ export function About() {
             <Card className="overflow-hidden rounded-2xl shadow-2xl shadow-primary/10 border-none">
               <CardContent className="p-0">
                 <Image
-                  src="https://placehold.co/600x600.png"
+                  src="https://github.com/HSDmarketing/Adsverse.image/blob/main/ChatGPT%20Image%20Jul%2028,%202025,%2005_41_55%20PM.png?raw=true"
                   alt="Abstract digital art representing a colorful galaxy or nebula."
                   data-ai-hint="abstract galaxy"
                   width={600}

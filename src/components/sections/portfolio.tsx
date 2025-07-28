@@ -10,7 +10,7 @@ const caseStudies = [
     client: "Nebula Inc.",
     title: "Rebranding a Global Tech Leader",
     description: "A complete brand overhaul and website redesign, resulting in a 200% increase in brand recognition and a 50% uplift in qualified leads.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://raw.githubusercontent.com/HSDmarketing/Adsverse.image/main/43071988186-removebg-preview%20(1).png",
     aiHint: "corporate branding",
     altText: "A modern website design for a tech company called Nebula Inc."
   },

@@ -32,7 +32,7 @@ export default function AiInMarketingPage() {
             </header>
 
             <Image
-              src="https://placehold.co/1200x600.png"
+              src="https://github.com/HSDmarketing/Adsverse.image/blob/main/Leonardo_Phoenix_09_A_futuristic_illustration_of_artificial_in_1.jpg?raw=true"
               alt="An abstract visualization of an AI neural network with glowing nodes."
               data-ai-hint="ai abstract"
               width={1200}

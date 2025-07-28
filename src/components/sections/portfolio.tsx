@@ -10,7 +10,7 @@ const caseStudies = [
     client: "Nebula Inc.",
     title: "Rebranding a Global Tech Leader",
     description: "A complete brand overhaul and website redesign, resulting in a 200% increase in brand recognition and a 50% uplift in qualified leads.",
-    image: "https://raw.githubusercontent.com/HSDmarketing/Adsverse.image/main/43071988186-removebg-preview%20(1).png",
+    image: "https://github.com/HSDmarketing/Adsverse.image/blob/main/43071988186-removebg-preview%20(1).png?raw=true",
     aiHint: "corporate branding",
     altText: "A modern website design for a tech company called Nebula Inc."
   },
@@ -18,7 +18,7 @@ const caseStudies = [
     client: "Galaxy Foods",
     title: "Viral Social Media & Influencer Campaign",
     description: "Launched a multi-platform campaign that reached 10 million users, boosted sales by 75% in one quarter, and won a marketing award.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://raw.githubusercontent.com/HSDmarketing/Adsverse.image/main/Social-Media-Campaign-Facebook-Ad-Examples%20(1).png",
     aiHint: "social media campaign",
     altText: "A collage of social media posts for a food brand called Galaxy Foods."
   },

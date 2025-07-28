@@ -32,7 +32,7 @@ export default function SeoTrendsPage() {
             </header>
 
             <Image
-              src="https://placehold.co/1200x600.png"
+              src="https://github.com/HSDmarketing/Adsverse.image/blob/main/Leonardo_Phoenix_09_A_futuristic_digital_illustration_of_a_com_3.jpg?raw=true"
               alt="An abstract data chart showing upward trends, representing SEO growth."
               data-ai-hint="data chart"
               width={1200}

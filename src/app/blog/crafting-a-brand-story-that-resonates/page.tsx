@@ -32,7 +32,7 @@ export default function BrandStoryPage() {
             </header>
 
             <Image
-              src="https://placehold.co/1200x600.png"
+              src="https://github.com/HSDmarketing/Adsverse.image/blob/main/WhatsApp%20Image%202025-07-28%20at%206.33.46%20PM.jpeg?raw=true"
               alt="A person writing a brand story in a journal, with a cup of coffee nearby."
               data-ai-hint="person writing"
               width={1200}

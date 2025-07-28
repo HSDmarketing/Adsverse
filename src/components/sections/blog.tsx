@@ -10,7 +10,7 @@ const posts = [
     category: "Technology",
     date: "July 26, 2024",
     excerpt: "Exploring how artificial intelligence is reshaping brand strategies and customer engagement in the digital age.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://github.com/HSDmarketing/Adsverse.image/blob/main/Leonardo_Phoenix_09_A_futuristic_illustration_of_artificial_in_1.jpg?raw=true",
     aiHint: "ai abstract",
     href: "/blog/future-of-ai-in-marketing",
     altText: "An abstract visualization of an AI neural network with glowing nodes."
@@ -20,7 +20,7 @@ const posts = [
     category: "SEO",
     date: "July 22, 2024",
     excerpt: "Stay ahead of the curve with these upcoming search engine optimization trends that will define online visibility.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://github.com/HSDmarketing/Adsverse.image/blob/main/Leonardo_Phoenix_09_A_futuristic_digital_illustration_of_a_com_3.jpg?raw=true",
     aiHint: "data chart",
     href: "/blog/5-seo-trends-to-watch-in-2025",
     altText: "An abstract data chart showing upward trends, representing SEO growth."
@@ -30,7 +30,7 @@ const posts = [
     category: "Branding",
     date: "July 18, 2024",
     excerpt: "Learn the art of storytelling to create a powerful and memorable brand identity that connects with your audience.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://github.com/HSDmarketing/Adsverse.image/blob/main/WhatsApp%20Image%202025-07-28%20at%206.33.46%20PM.jpeg?raw=true",
     aiHint: "person writing",
     href: "/blog/crafting-a-brand-story-that-resonates",
     altText: "A person writing a brand story in a journal, with a cup of coffee nearby."

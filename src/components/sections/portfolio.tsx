@@ -37,13 +37,13 @@ const testimonials = [
   },
   {
     quote: "The ROI from their performance marketing campaigns has been phenomenal. Truly a team of marketing rockstars who understand our business.",
-    name: "Brenda Orbit",
-    title: "CMO of Galaxy Foods",
+    name: "team Steadfast",
+    title: "of Steadfast",
     avatar: "https://placehold.co/100x100.png",
     logo: "https://placehold.co/120x40.png",
-    aiHint: "woman portrait",
-    altAvatar: "Portrait of Brenda Orbit",
-    altLogo: "Logo of Galaxy Foods"
+    aiHint: "company logo",
+    altAvatar: "Logo of Steadfast",
+    altLogo: "Logo of Steadfast"
   },
   {
     quote: "Working with them was a seamless experience. They understood our complex needs perfectly and delivered beyond our highest expectations.",

@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useForm } from "react-hook-form"
@@ -38,7 +37,7 @@ export function Contact() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Replace this URL with your actual Google Apps Script Web App URL
+    // This is your actual Google Apps Script Web App URL
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxVKzV4JYTrlV-s-a1tglwK_-M_luda5e9k7IGtAWbF2wbTuahrJbul73DKFo1WZJp9/exec";
     
     const formData = new FormData();
@@ -47,8 +46,6 @@ export function Contact() {
     });
 
     try {
-      // We are not using 'no-cors' mode anymore to get a proper response.
-      // The Google Apps Script needs to be configured to handle CORS.
       const response = await fetch(SCRIPT_URL, {
         method: 'POST',
         body: formData,

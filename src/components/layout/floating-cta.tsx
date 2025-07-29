@@ -64,13 +64,13 @@ export function FloatingCta() {
             </a>
         </Button>
         <Button asChild size="icon" variant="ghost" className="rounded-full hover:bg-transparent p-0">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/adsverse.ai/" target="_blank" rel="noopener noreferrer">
                 <InstagramIcon className="h-7 w-7" />
                 <span className="sr-only">Instagram</span>
             </a>
         </Button>
         <Button asChild size="icon" variant="ghost" className="rounded-full hover:bg-transparent p-0">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/1FBaF7qcEM/" target="_blank" rel="noopener noreferrer">
                 <FacebookIcon className="h-7 w-7" />
                 <span className="sr-only">Facebook</span>
             </a>

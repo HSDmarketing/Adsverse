@@ -28,8 +28,8 @@ const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const socialLinks = [
   { href: "#", icon: X, name: "X (formerly Twitter)" },
-  { href: "#", icon: FacebookIcon, name: "Facebook" },
-  { href: "#", icon: InstagramIcon, name: "Instagram" },
+  { href: "https://www.facebook.com/share/1FBaF7qcEM/", icon: FacebookIcon, name: "Facebook" },
+  { href: "https://www.instagram.com/adsverse.ai/", icon: InstagramIcon, name: "Instagram" },
 ];
 
 const footerLinks = [

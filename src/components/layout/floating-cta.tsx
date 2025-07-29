@@ -33,18 +33,17 @@ export function FloatingCta() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // This runs only on the client, after hydration, to avoid mismatch errors.
     const checkScroll = () => {
-       if (window.pageYOffset > 200) { // Show after scrolling down a bit
+       if (window.pageYOffset > 200) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    }
-    // Run it once to set initial state
-    checkScroll();
-
+    };
+    
     window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Check on initial mount
+
     return () => window.removeEventListener("scroll", checkScroll);
   }, []);
 

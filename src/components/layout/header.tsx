@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils";
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { usePathname } from "next/navigation";
@@ -86,15 +88,16 @@ export function Header() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background">
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-8">
-                  <Logo />
-                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-0">
+               <SheetHeader className="p-6 flex flex-row items-center justify-between">
+                 <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                 <Logo />
+                 <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                     <X className="h-6 w-6" />
                     <span className="sr-only">Close menu</span>
                   </Button>
-                </div>
+              </SheetHeader>
+              <div className="p-6 pt-0">
                 <nav className="flex flex-col gap-4">
                   <NavLinkItems isMobile />
                   <Button asChild variant="outline" className="mt-4">

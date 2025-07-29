@@ -27,13 +27,13 @@ const caseStudies = [
 const testimonials = [
   {
     quote: "StellarBrand took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled. The results were simply outstanding.",
-    name: "Alex Starr",
-    title: "CEO of Nebula Inc.",
+    name: "Kajol Kale",
+    title: "CEO of Namolegallabs",
     avatar: "https://placehold.co/100x100.png",
     logo: "https://placehold.co/120x40.png",
-    aiHint: "man portrait",
-    altAvatar: "Portrait of Alex Starr",
-    altLogo: "Logo of Nebula Inc."
+    aiHint: "woman portrait",
+    altAvatar: "Portrait of Kajol Kale",
+    altLogo: "Logo of Namolegallabs"
   },
   {
     quote: "The ROI from their performance marketing campaigns has been phenomenal. Truly a team of marketing rockstars who understand our business.",

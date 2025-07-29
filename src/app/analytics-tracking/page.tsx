@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Analytics & Conversion Tracking Setup | StellarBrand',
+    title: 'Analytics & Conversion Tracking Setup | AdsVerse',
     description: 'Make data-driven decisions with a robust analytics and tracking foundation. Our experts implement GA4, GTM, and server-side tracking for accurate insights.',
 };
 
@@ -24,7 +24,7 @@ export default function AnalyticsTrackingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            You can't improve what you don't measure. A solid analytics and conversion tracking setup is the bedrock of any successful marketing strategy. At StellarBrand, we provide expert services to ensure you're collecting accurate, reliable data and tracking the actions that matter most to your business.
+                            You can't improve what you don't measure. A solid analytics and conversion tracking setup is the bedrock of any successful marketing strategy. At AdsVerse, we provide expert services to ensure you're collecting accurate, reliable data and tracking the actions that matter most to your business.
                         </p>
                         <p>
                             We go beyond basic pageview tracking to implement a comprehensive measurement plan that gives you a crystal-clear understanding of your customer journey and marketing ROI.
@@ -75,7 +75,7 @@ export default function AnalyticsTrackingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Unlock the power of your data.</p>
-                            <p className="mt-2">With a solid tracking foundation from StellarBrand, you'll have the clarity you need to grow with confidence.</p>
+                            <p className="mt-2">With a solid tracking foundation from AdsVerse, you'll have the clarity you need to grow with confidence.</p>
                             <p className="mt-6 text-2xl">
                                 💡 Ready to get clear on your numbers? <Link href="/#contact" className="text-accent hover:underline">Request an analytics audit today.</Link>
                             </p>

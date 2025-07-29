@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Expert SEO & Google Ads Management Services | StellarBrand',
+    title: 'Expert SEO & Google Ads Management Services | AdsVerse',
     description: 'We blend the art of content with the science of search. Our SEO and Google Ads services are designed to boost visibility, drive qualified traffic, and increase conversions.',
 };
 
@@ -24,7 +24,7 @@ export default function SeoAdsPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-12">
                         <p>
-                           At StellarBrand, we combine the long-term power of Search Engine Optimization (SEO) with the immediate impact of Paid Search Advertising (PPC). Our integrated approach ensures your brand is discovered, remembered, and chosen by your ideal customers.
+                           At AdsVerse, we combine the long-term power of Search Engine Optimization (SEO) with the immediate impact of Paid Search Advertising (PPC). Our integrated approach ensures your brand is discovered, remembered, and chosen by your ideal customers.
                         </p>
                         <p>
                            Our goal is simple: to boost your visibility, drive highly qualified traffic to your website, and convert that traffic into loyal customers. Whether it’s sustainable organic growth through SEO or rapid results through paid ads, we guide your brand to the top of the search engine results page (SERP).
@@ -56,7 +56,7 @@ export default function SeoAdsPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Rise in search. Rule the results.</p>
-                            <p className="mt-2">Let StellarBrand craft a visibility strategy that lights up the web and generates real business growth.</p>
+                            <p className="mt-2">Let AdsVerse craft a visibility strategy that lights up the web and generates real business growth.</p>
                             <p className="mt-6 text-2xl">
                                 🌟 Ready to get seen? <Link href="/#contact" className="text-accent hover:underline">Let's optimize your path to the top.</Link>
                             </p>

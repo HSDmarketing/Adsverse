@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'The Future is Now: How AI is Revolutionizing Marketing | StellarBrand',
+  title: 'The Future is Now: How AI is Revolutionizing Marketing | AdsVerse',
   description: 'Explore how artificial intelligence is reshaping brand strategies, from hyper-personalization and predictive analytics to content creation and ethical considerations.',
 };
 

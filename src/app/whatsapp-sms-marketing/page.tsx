@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'WhatsApp & SMS Marketing Services | StellarBrand',
+    title: 'WhatsApp & SMS Marketing Services | AdsVerse',
     description: 'Reach customers instantly and personally with our targeted WhatsApp and SMS marketing campaigns. Drive immediate action and engagement with direct messaging.',
 };
 
@@ -24,7 +24,7 @@ export default function WhatsAppSmsMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In a mobile-first world, WhatsApp and SMS marketing offer an unparalleled opportunity to connect with your customers on their most-used devices. At StellarBrand, we help you leverage these powerful channels to deliver timely promotions, important updates, and personalized messages that cut through the noise and command attention.
+                            In a mobile-first world, WhatsApp and SMS marketing offer an unparalleled opportunity to connect with your customers on their most-used devices. At AdsVerse, we help you leverage these powerful channels to deliver timely promotions, important updates, and personalized messages that cut through the noise and command attention.
                         </p>
                         <p>
                             Our services cover everything from strategy and compliance to execution and reporting, ensuring your campaigns are both highly effective and respectful of your audience.
@@ -68,7 +68,7 @@ export default function WhatsAppSmsMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Engage your audience on the go.</p>
-                            <p className="mt-2">With StellarBrand, your message gets delivered right into the hands of your customers.</p>
+                            <p className="mt-2">With AdsVerse, your message gets delivered right into the hands of your customers.</p>
                             <p className="mt-6 text-2xl">
                                 💬 Ready to start the conversation? <Link href="/#contact" className="text-accent hover:underline">Let's plan your messaging campaign.</Link>
                             </p>

@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'E-commerce Marketing Services for Online Stores | StellarBrand',
+    title: 'E-commerce Marketing Services for Online Stores | AdsVerse',
     description: 'Drive traffic, increase sales, and grow your e-commerce brand with our specialized marketing services for Shopify, Amazon, and other online stores.',
 };
 
@@ -24,7 +24,7 @@ export default function EcommerceMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            Running a successful e-commerce store requires more than just a great product. You need a powerful, multi-channel marketing strategy to stand out in a competitive marketplace. At StellarBrand, we offer specialized marketing services for e-commerce brands on platforms like Shopify and marketplaces like Amazon and Flipkart. We help you attract the right customers, optimize your store for conversions, and maximize your profitability.
+                            Running a successful e-commerce store requires more than just a great product. You need a powerful, multi-channel marketing strategy to stand out in a competitive marketplace. At AdsVerse, we offer specialized marketing services for e-commerce brands on platforms like Shopify and marketplaces like Amazon and Flipkart. We help you attract the right customers, optimize your store for conversions, and maximize your profitability.
                         </p>
 
                         <div>
@@ -65,7 +65,7 @@ export default function EcommerceMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Build a thriving online retail empire.</p>
-                            <p className="mt-2">Let StellarBrand be the expert marketing partner that helps your e-commerce brand succeed.</p>
+                            <p className="mt-2">Let AdsVerse be the expert marketing partner that helps your e-commerce brand succeed.</p>
                             <p className="mt-6 text-2xl">
                                 🛍️ Ready to boost your online sales? <Link href="/#contact" className="text-accent hover:underline">Let's discuss your e-commerce strategy.</Link>
                             </p>

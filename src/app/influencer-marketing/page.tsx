@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Influencer Marketing Agency | StellarBrand',
+    title: 'Influencer Marketing Agency | AdsVerse',
     description: 'We connect brands with authentic creators to tell your story, engage audiences, and drive real impact. Full-service campaign management from discovery to ROI.',
 };
 
@@ -24,7 +24,7 @@ export default function InfluencerMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In a world driven by trust and authenticity, influencer marketing isn’t just a trend—it’s a powerful bridge between brands and their target audiences. At StellarBrand, we help you connect with the right creators to tell your story in a way that feels natural, credible, and genuinely engaging.
+                            In a world driven by trust and authenticity, influencer marketing isn’t just a trend—it’s a powerful bridge between brands and their target audiences. At AdsVerse, we help you connect with the right creators to tell your story in a way that feels natural, credible, and genuinely engaging.
                         </p>
                         <p>
                             From micro-influencers with niche communities to established digital icons, we handpick partners who align with your brand values and audience interests—turning passive followers into loyal fans and impressions into conversions.
@@ -75,7 +75,7 @@ export default function InfluencerMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Real voices. Real impact.</p>
-                            <p className="mt-2">With StellarBrand, your brand doesn't just advertise—it influences, connects, and inspires.</p>
+                            <p className="mt-2">With AdsVerse, your brand doesn't just advertise—it influences, connects, and inspires.</p>
                             <p className="mt-6 text-2xl">
                                 🌠 Let’s partner with the digital stars who’ll help your brand shine brighter.
                             </p>

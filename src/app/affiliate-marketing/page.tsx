@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Affiliate Marketing Program Setup | StellarBrand',
+    title: 'Affiliate Marketing Program Setup | AdsVerse',
     description: 'Launch a powerful, performance-based marketing channel. We help you build and manage an affiliate program that drives sales and expands your brand reach.',
 };
 
@@ -24,7 +24,7 @@ export default function AffiliateMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            Affiliate marketing is a highly effective, performance-based channel to acquire new customers by leveraging the power of trusted partnerships. At StellarBrand, we help you build, launch, and manage a successful affiliate program from the ground up, turning brand advocates into a formidable extension of your sales team.
+                            Affiliate marketing is a highly effective, performance-based channel to acquire new customers by leveraging the power of trusted partnerships. At AdsVerse, we help you build, launch, and manage a successful affiliate program from the ground up, turning brand advocates into a formidable extension of your sales team.
                         </p>
                         <p>
                             We handle the technical setup, create compelling promotional assets, and provide the strategic framework for a scalable and profitable affiliate program.
@@ -68,7 +68,7 @@ export default function AffiliateMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Turn Your Brand Fans into a Sales Force.</p>
-                            <p className="mt-2">With a professionally structured affiliate program from StellarBrand, you can scale your marketing efforts efficiently and effectively.</p>
+                            <p className="mt-2">With a professionally structured affiliate program from AdsVerse, you can scale your marketing efforts efficiently and effectively.</p>
                             <p className="mt-6 text-2xl">
                                 🚀 Ready to launch your affiliate program? <Link href="/#contact" className="text-accent hover:underline">Let's build it together.</Link>
                             </p>

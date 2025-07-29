@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'YouTube Marketing & Channel Optimization Services | StellarBrand',
+    title: 'YouTube Marketing & Channel Optimization Services | AdsVerse',
     description: 'Grow your YouTube channel, increase views, and convert subscribers into customers with our expert YouTube marketing, SEO, and optimization services.',
 };
 
@@ -24,7 +24,7 @@ export default function YouTubeMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            YouTube is the world's second-largest search engine, making it a critical platform for brand visibility, education, and community building. At StellarBrand, we offer a complete suite of YouTube marketing services designed to optimize your channel, grow your subscriber base, and turn casual viewers into loyal fans and customers.
+                            YouTube is the world's second-largest search engine, making it a critical platform for brand visibility, education, and community building. At AdsVerse, we offer a complete suite of YouTube marketing services designed to optimize your channel, grow your subscriber base, and turn casual viewers into loyal fans and customers.
                         </p>
                         <p>
                             From content strategy and video SEO to thumbnail design and analytics, we implement proven tactics to help your videos rank higher, get discovered by new audiences, and achieve your business objectives.
@@ -68,7 +68,7 @@ export default function YouTubeMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Make your brand the star of the screen.</p>
-                            <p className="mt-2">Let StellarBrand elevate your YouTube presence to new heights of success.</p>
+                            <p className="mt-2">Let AdsVerse elevate your YouTube presence to new heights of success.</p>
                             <p className="mt-6 text-2xl">
                                 🚀 Ready to grow your channel? <Link href="/#contact" className="text-accent hover:underline">Let's optimize your YouTube strategy.</Link>
                             </p>

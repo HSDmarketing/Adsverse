@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | StellarBrand',
-    description: 'Read the official Terms of Service for using the StellarBrand website and services. This agreement governs your use of our digital marketing services.',
+    title: 'Terms of Service | AdsVerse',
+    description: 'Read the official Terms of Service for using the AdsVerse website and services. This agreement governs your use of our digital marketing services.',
 };
 
 export default function TermsOfServicePage() {
@@ -23,7 +23,7 @@ export default function TermsOfServicePage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the stellarbrand.com website (the "Service") operated by StellarBrand ("us", "we", or "our").
+                            Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the adsverse.com website (the "Service") operated by AdsVerse ("us", "we", or "our").
                         </p>
                         <p>
                             Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.
@@ -36,17 +36,17 @@ export default function TermsOfServicePage() {
 
                         <h2 className="font-headline text-3xl font-bold text-foreground/90">2. Intellectual Property</h2>
                         <p>
-                            The Service and its original content, features, and functionality are and will remain the exclusive property of StellarBrand and its licensors. The Service is protected by copyright, trademark, and other laws of both the India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of StellarBrand.
+                            The Service and its original content, features, and functionality are and will remain the exclusive property of AdsVerse and its licensors. The Service is protected by copyright, trademark, and other laws of both the India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of AdsVerse.
                         </p>
                         
                         <h2 className="font-headline text-3xl font-bold text-foreground/90">3. Links to Other Websites</h2>
                         <p>
-                            Our Service may contain links to third-party web sites or services that are not owned or controlled by StellarBrand. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that StellarBrand shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+                            Our Service may contain links to third-party web sites or services that are not owned or controlled by AdsVerse. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that AdsVerse shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
                         </p>
 
                         <h2 className="font-headline text-3xl font-bold text-foreground/90">4. Limitation of Liability</h2>
                         <p>
-                           In no event shall StellarBrand, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+                           In no event shall AdsVerse, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
                         </p>
                         
                         <h2 className="font-headline text-3xl font-bold text-foreground/90">5. Governing Law</h2>
@@ -63,7 +63,7 @@ export default function TermsOfServicePage() {
                             <h3 className="font-headline text-2xl font-bold text-foreground/90">Contact Us</h3>
                             <p className="mt-2">If you have any questions about these Terms, please contact us.</p>
                              <p className="mt-4">
-                                <a href="mailto:contact@stellarbrand.com" className="text-accent hover:underline">contact@stellarbrand.com</a>
+                                <a href="mailto:contact@adsverse.com" className="text-accent hover:underline">contact@adsverse.com</a>
                             </p>
                         </div>
                     </div>

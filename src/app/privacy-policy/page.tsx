@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | StellarBrand',
-    description: 'Understand how StellarBrand collects, uses, and protects your personal information when you use our website and services. Your privacy is our priority.',
+    title: 'Privacy Policy | AdsVerse',
+    description: 'Understand how AdsVerse collects, uses, and protects your personal information when you use our website and services. Your privacy is our priority.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            StellarBrand ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website stellarbrand.com (the "Site") and use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+                            AdsVerse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website stellarbrand.com (the "Site") and use our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
                         </p>
 
                         <h2 className="font-headline text-3xl font-bold text-foreground/90">1. Information We Collect</h2>
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                             <h3 className="font-headline text-2xl font-bold text-foreground/90">Contact Us</h3>
                             <p className="mt-2">If you have questions or comments about this Privacy Policy, please contact us at:</p>
                             <p className="mt-4">
-                                <a href="mailto:contact@stellarbrand.com" className="text-accent hover:underline">contact@stellarbrand.com</a>
+                                <a href="mailto:contact@adsverse.com" className="text-accent hover:underline">contact@adsverse.com</a>
                             </p>
                         </div>
                     </div>

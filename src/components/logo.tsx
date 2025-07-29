@@ -17,7 +17,7 @@ export function Logo({ className, isFooter = false }: LogoProps) {
       )}
     >
       <Sparkles className="text-accent h-6 w-6" />
-      <span>StellarBrand</span>
+      <span>AdsVerse</span>
     </div>
   );
 }

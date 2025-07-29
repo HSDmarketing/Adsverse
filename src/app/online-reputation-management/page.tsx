@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Online Reputation Management (ORM) Services | StellarBrand',
+    title: 'Online Reputation Management (ORM) Services | AdsVerse',
     description: 'We safeguard your brand’s digital image, build trust, and ensure your online presence shines. Our ORM services include monitoring, review management, and crisis response.',
 };
 
@@ -24,7 +24,7 @@ export default function OrmPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In the digital age, your online reputation is your most valuable asset. A single negative review or misplaced comment can impact customer trust and your bottom line. At StellarBrand, we provide comprehensive Online Reputation Management (ORM) services to monitor, manage, and enhance how your brand is perceived online.
+                            In the digital age, your online reputation is your most valuable asset. A single negative review or misplaced comment can impact customer trust and your bottom line. At AdsVerse, we provide comprehensive Online Reputation Management (ORM) services to monitor, manage, and enhance how your brand is perceived online.
                         </p>
                         <p>
                             Our proactive approach focuses on building a powerful and positive digital footprint, managing customer feedback constructively, and ensuring that your brand's story is told accurately and favorably across all platforms.
@@ -68,7 +68,7 @@ export default function OrmPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Your brand's reputation, protected and perfected.</p>
-                            <p className="mt-2">With StellarBrand, you can be confident that your digital presence is a true reflection of your excellence.</p>
+                            <p className="mt-2">With AdsVerse, you can be confident that your digital presence is a true reflection of your excellence.</p>
                             <p className="mt-6 text-2xl">
                                 ✨ Ready to build a five-star reputation? <Link href="/#contact" className="text-accent hover:underline">Let's protect your brand's image.</Link>
                             </p>

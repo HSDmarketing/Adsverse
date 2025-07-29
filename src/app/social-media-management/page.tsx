@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Social Media Management Services | StellarBrand',
+    title: 'Social Media Management Services | AdsVerse',
     description: 'We manage your social presence on Facebook, Instagram, and more to build community, engage followers, and drive business results. Let us handle your social media.',
 };
 
@@ -24,7 +24,7 @@ export default function SocialMediaManagementPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In today’s fast-scrolling world, your social media presence is your digital storefront, your community hub, and a powerful engine for growth. At StellarBrand, we manage your presence on platforms like Facebook and Instagram not just to post content, but to build a living, breathing brand experience that resonates with your audience and drives real business results.
+                            In today’s fast-scrolling world, your social media presence is your digital storefront, your community hub, and a powerful engine for growth. At AdsVerse, we manage your presence on platforms like Facebook and Instagram not just to post content, but to build a living, breathing brand experience that resonates with your audience and drives real business results.
                         </p>
                         <p>
                             We don’t just post—we strategize, create, engage, and analyze. Our team combines creative storytelling with data-driven tactics to ensure your brand consistently shines across every screen, turning casual followers into loyal advocates.
@@ -75,7 +75,7 @@ export default function SocialMediaManagementPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your voice echo across the digital universe.</p>
-                            <p className="mt-2">With StellarBrand, your social presence becomes more than just a profile—it becomes a powerful asset for your brand.</p>
+                            <p className="mt-2">With AdsVerse, your social presence becomes more than just a profile—it becomes a powerful asset for your brand.</p>
                             <p className="mt-6 text-2xl">
                                 🌌 Ready to turn followers into loyal fans? <Link href="/#contact" className="text-accent hover:underline">Book your social media audit today.</Link>
                             </p>

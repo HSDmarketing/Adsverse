@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Craft a Brand Story That Resonates | StellarBrand',
+  title: 'How to Craft a Brand Story That Resonates | AdsVerse',
   description: 'Learn the art of brand storytelling to forge a powerful and memorable connection with your audience. Discover the key elements of a story that sells.',
 };
 

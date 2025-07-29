@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion"
 
 export const metadata: Metadata = {
-    title: 'Services & Pricing | StellarBrand',
+    title: 'Services & Pricing | AdsVerse',
     description: 'Transparent pricing for our suite of digital marketing services. Find the right plan for your brand\'s trajectory with our detailed service list.',
 };
 

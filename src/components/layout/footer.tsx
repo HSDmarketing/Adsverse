@@ -89,7 +89,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-border pt-8 text-center text-sm text-foreground/60">
-          <p>&copy; {new Date().getFullYear()} StellarBrand. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AdsVerse. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

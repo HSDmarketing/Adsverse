@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '5 SEO Trends That Will Dominate in 2025 | StellarBrand',
+  title: '5 SEO Trends That Will Dominate in 2025 | AdsVerse',
   description: 'Stay ahead of the competition. Discover the top SEO trends for 2025, from AI in search (SGE) to topical authority and user experience.',
 };
 

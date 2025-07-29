@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Photo & Video Production Services | StellarBrand',
+    title: 'Photo & Video Production Services | AdsVerse',
     description: 'Professional photo and video production services. From concept to final cut, we create stunning visuals for your brand, including ads, social content, and product photography.',
 };
 
@@ -24,7 +24,7 @@ export default function PhotoVideoEditingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                           In today's visual-first world, high-quality photo and video content is non-negotiable. At StellarBrand, your brand’s story comes alive through stunning, professional visuals. We handle everything from concept development and storyboarding to shooting and post-production, ensuring your content is not just seen, but felt.
+                           In today's visual-first world, high-quality photo and video content is non-negotiable. At AdsVerse, your brand’s story comes alive through stunning, professional visuals. We handle everything from concept development and storyboarding to shooting and post-production, ensuring your content is not just seen, but felt.
                         </p>
 
                         <div>

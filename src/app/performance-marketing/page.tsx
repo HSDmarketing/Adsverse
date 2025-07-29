@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Performance Marketing Agency | StellarBrand',
+    title: 'Performance Marketing Agency | AdsVerse',
     description: 'Results-driven performance marketing services. We manage data-backed ad campaigns on Meta (Facebook, Instagram) and Google to deliver measurable ROI.',
 };
 
@@ -24,7 +24,7 @@ export default function PerformanceMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In the vast universe of online advertising, performance marketing is the science of turning clicks into customers. It's about ensuring every dollar spent is an investment in measurable growth. At StellarBrand, our performance marketing approach is built on a foundation of rigorous strategy, compelling creative, and precision targeting.
+                            In the vast universe of online advertising, performance marketing is the science of turning clicks into customers. It's about ensuring every dollar spent is an investment in measurable growth. At AdsVerse, our performance marketing approach is built on a foundation of rigorous strategy, compelling creative, and precision targeting.
                         </p>
                         <p>
                            We manage data-backed ad campaigns across platforms like Meta (Facebook & Instagram) and Google, focusing relentlessly on one thing: delivering real, tangible results for your business.
@@ -75,7 +75,7 @@ export default function PerformanceMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your ad spend work smarter, not harder.</p>
-                            <p className="mt-2">With StellarBrand, performance marketing isn’t just about spending money—it’s about growing smarter, faster, and farther.</p>
+                            <p className="mt-2">With AdsVerse, performance marketing isn’t just about spending money—it’s about growing smarter, faster, and farther.</p>
                              <p className="mt-6 text-2xl">
                                 🚀 Ready to boost your ROI? <Link href="/#contact" className="text-accent hover:underline">Let's discuss your next campaign.</Link>
                             </p>

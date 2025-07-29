@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Lead Generation Services That Convert | StellarBrand',
+    title: 'Lead Generation Services That Convert | AdsVerse',
     description: 'We build high-performance lead generation engines that turn targeted traffic into a consistent stream of qualified prospects and sales opportunities for your business.',
 };
 
@@ -24,7 +24,7 @@ export default function LeadGenerationPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            A predictable flow of qualified leads is the lifeblood of any scaling business. At StellarBrand, we specialize in creating and executing end-to-end lead generation campaigns that deliver a consistent pipeline of potential customers. We combine precision-targeted advertising, compelling offers, and optimized funnels to capture and nurture high-intent prospects.
+                            A predictable flow of qualified leads is the lifeblood of any scaling business. At AdsVerse, we specialize in creating and executing end-to-end lead generation campaigns that deliver a consistent pipeline of potential customers. We combine precision-targeted advertising, compelling offers, and optimized funnels to capture and nurture high-intent prospects.
                         </p>
                         <p>
                            Our approach is data-driven and results-obsessed. We focus on attracting the right audience, converting them into leads, and empowering your sales team for success.
@@ -75,7 +75,7 @@ export default function LeadGenerationPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Fuel your growth with a predictable stream of leads.</p>
-                            <p className="mt-2">Let StellarBrand build a lead generation machine that works for you 24/7.</p>
+                            <p className="mt-2">Let AdsVerse build a lead generation machine that works for you 24/7.</p>
                             <p className="mt-6 text-2xl">
                                 📈 Ready to grow your pipeline? <Link href="/#contact" className="text-accent hover:underline">Book a lead generation strategy call.</Link>
                             </p>

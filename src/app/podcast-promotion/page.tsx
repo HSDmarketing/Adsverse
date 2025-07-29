@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Podcast Distribution & Promotion Services | StellarBrand',
+    title: 'Podcast Distribution & Promotion Services | AdsVerse',
     description: 'Amplify your voice and grow your audience. Our expert podcast distribution and promotion services get your show on all major platforms and in front of the right listeners.',
 };
 
@@ -24,7 +24,7 @@ export default function PodcastPromotionPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            Creating a great podcast is only half the battle. Getting it in front of the right listeners is the key to growth and monetization. At StellarBrand, we handle the technical and promotional heavy lifting, so you can focus on creating amazing content. We ensure your podcast is seamlessly distributed to all major platforms and promoted effectively to attract and retain subscribers.
+                            Creating a great podcast is only half the battle. Getting it in front of the right listeners is the key to growth and monetization. At AdsVerse, we handle the technical and promotional heavy lifting, so you can focus on creating amazing content. We ensure your podcast is seamlessly distributed to all major platforms and promoted effectively to attract and retain subscribers.
                         </p>
 
                         <div>
@@ -65,7 +65,7 @@ export default function PodcastPromotionPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Amplify your voice. Expand your reach.</p>
-                            <p className="mt-2">Let StellarBrand help your podcast reach the audience it deserves.</p>
+                            <p className="mt-2">Let AdsVerse help your podcast reach the audience it deserves.</p>
                             <p className="mt-6 text-2xl">
                                 🎧 Ready to grow your listeners? <Link href="/#contact" className="text-accent hover:underline">Let's talk podcast promotion.</Link>
                             </p>

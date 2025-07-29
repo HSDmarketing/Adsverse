@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Strategic Content Marketing Services | StellarBrand',
+    title: 'Strategic Content Marketing Services | AdsVerse',
     description: 'We create stellar content that tells your story, engages your audience, and drives meaningful action. Fuel your brand with content that converts.',
 };
 
@@ -24,7 +24,7 @@ export default function ContentMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In the digital universe, content is the gravitational force that pulls your audience closer. At StellarBrand, we don’t just write words; we craft strategic narratives that build authority, foster trust, and inspire action. Our content marketing services are designed to transform your brand into the go-to resource in your industry.
+                            In the digital universe, content is the gravitational force that pulls your audience closer. At AdsVerse, we don’t just write words; we craft strategic narratives that build authority, foster trust, and inspire action. Our content marketing services are designed to transform your brand into the go-to resource in your industry.
                         </p>
                         <p>
                             We manage the entire content lifecycle—from strategy and creation to distribution and analysis—ensuring your content not only reaches the right people but also delivers measurable business results.
@@ -68,7 +68,7 @@ export default function ContentMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Words that build worlds.</p>
-                            <p className="mt-2">With StellarBrand, your content becomes your most powerful marketing asset.</p>
+                            <p className="mt-2">With AdsVerse, your content becomes your most powerful marketing asset.</p>
                             <p className="mt-6 text-2xl">
                                 🚀 Ready to tell your story? <Link href="/#contact" className="text-accent hover:underline">Let's create content that shines.</Link>
                             </p>

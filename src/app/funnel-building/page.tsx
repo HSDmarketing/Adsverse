@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Sales Funnel Building & Automation Services | StellarBrand',
+    title: 'Sales Funnel Building & Automation Services | AdsVerse',
     description: 'We design and build automated marketing and sales funnels that guide prospects from awareness to conversion, seamlessly. Maximize your lead nurturing and sales.',
 };
 
@@ -24,7 +24,7 @@ export default function FunnelBuildingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            A well-structured marketing funnel is an automated system that works 24/7 to attract, educate, and convert your ideal customers. At StellarBrand, we specialize in building strategic sales and marketing funnels that provide a seamless, persuasive, and automated journey for your prospects.
+                            A well-structured marketing funnel is an automated system that works 24/7 to attract, educate, and convert your ideal customers. At AdsVerse, we specialize in building strategic sales and marketing funnels that provide a seamless, persuasive, and automated journey for your prospects.
                         </p>
                         <p>
                             From the initial ad click to the final thank you page, we map out and implement every step, integrating powerful email and WhatsApp automation to nurture leads and maximize conversions without manual effort.
@@ -68,7 +68,7 @@ export default function FunnelBuildingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Put your conversions on autopilot.</p>
-                            <p className="mt-2">Let StellarBrand build a powerful, automated funnel that grows your business while you sleep.</p>
+                            <p className="mt-2">Let AdsVerse build a powerful, automated funnel that grows your business while you sleep.</p>
                             <p className="mt-6 text-2xl">
                                 ⚙️ Ready to automate your growth? <Link href="/#contact" className="text-accent hover:underline">Let's design your perfect funnel.</Link>
                             </p>

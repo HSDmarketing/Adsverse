@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Brand Strategy & Identity Design Services | StellarBrand',
+    title: 'Brand Strategy & Identity Design Services | AdsVerse',
     description: 'We build unforgettable brands. Our services include brand discovery, positioning, messaging, visual identity design, and comprehensive brand guidelines.',
 };
 
@@ -24,7 +24,7 @@ export default function BrandStrategyPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            A strong brand is more than a logo; it's a promise. It’s the feeling your customers have when they interact with you. At StellarBrand, we don’t just design visuals—we architect brand experiences. We align your purpose, emotion, and perception into a cohesive identity that stands out in a crowded universe.
+                            A strong brand is more than a logo; it's a promise. It’s the feeling your customers have when they interact with you. At AdsVerse, we don’t just design visuals—we architect brand experiences. We align your purpose, emotion, and perception into a cohesive identity that stands out in a crowded universe.
                         </p>
                         <p>
                             Our approach blends rigorous strategy with compelling storytelling. Whether you're launching a new venture or revitalizing an established one, we help you shape a narrative that is not only visually stunning but also authentically you.
@@ -75,7 +75,7 @@ export default function BrandStrategyPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Let your brand command the spotlight.</p>
-                            <p className="mt-2">With StellarBrand, your identity becomes more than a logo—it becomes a legacy.</p>
+                            <p className="mt-2">With AdsVerse, your identity becomes more than a logo—it becomes a legacy.</p>
                             <p className="mt-6 text-2xl">
                                 🌟 Ready to build an iconic brand? <Link href="/#contact" className="text-accent hover:underline">Let’s shape your universe.</Link>
                             </p>

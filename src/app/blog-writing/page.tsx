@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Expert Blog Writing & SEO Article Services | StellarBrand',
+    title: 'Expert Blog Writing & SEO Article Services | AdsVerse',
     description: 'Drive organic traffic and establish authority with high-quality, SEO-friendly blog posts and articles written by our expert content creators.',
 };
 
@@ -24,7 +24,7 @@ export default function BlogWritingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            A regularly updated blog is a cornerstone of modern SEO and a powerful tool for building trust with your audience. At StellarBrand, we provide a professional blog and article writing service that delivers well-researched, engaging, and SEO-optimized content tailored to your industry. We help you consistently publish valuable content that drives organic traffic, generates qualified leads, and positions you as a thought leader.
+                            A regularly updated blog is a cornerstone of modern SEO and a powerful tool for building trust with your audience. At AdsVerse, we provide a professional blog and article writing service that delivers well-researched, engaging, and SEO-optimized content tailored to your industry. We help you consistently publish valuable content that drives organic traffic, generates qualified leads, and positions you as a thought leader.
                         </p>
                         <p>
                             Our writers are skilled in crafting compelling narratives that not only please search engines but also provide genuine value and build a loyal readership.
@@ -68,7 +68,7 @@ export default function BlogWritingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Become the go-to resource in your niche.</p>
-                            <p className="mt-2">Let StellarBrand fuel your content engine with articles that attract, engage, and convert.</p>
+                            <p className="mt-2">Let AdsVerse fuel your content engine with articles that attract, engage, and convert.</p>
                             <p className="mt-6 text-2xl">
                                 ✍️ Ready to publish content that shines? <Link href="/#contact" className="text-accent hover:underline">Order your first article today.</Link>
                             </p>

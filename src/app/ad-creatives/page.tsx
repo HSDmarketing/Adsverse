@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'High-Impact Ad Creative Production | StellarBrand',
+    title: 'High-Impact Ad Creative Production | AdsVerse',
     description: 'Capture attention and drive conversions with stunning ad creatives. Our team designs high-performance video ads, banners, and carousels that deliver results.',
 };
 
@@ -24,7 +24,7 @@ export default function AdCreativesPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            In performance marketing, the creative is your most powerful lever. A great ad can be the difference between a campaign that breaks records and one that fizzles out. At StellarBrand, our creative team specializes in producing high-impact ad creatives engineered to capture attention, communicate your message with clarity, and compel users to take action.
+                            In performance marketing, the creative is your most powerful lever. A great ad can be the difference between a campaign that breaks records and one that fizzles out. At AdsVerse, our creative team specializes in producing high-impact ad creatives engineered to capture attention, communicate your message with clarity, and compel users to take action.
                         </p>
                         <p>
                             We fuse strategic insights with artistic innovation to produce visuals that don’t just look exceptional—they perform brilliantly.
@@ -68,7 +68,7 @@ export default function AdCreativesPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Creativity that drives performance.</p>
-                            <p className="mt-2">Let StellarBrand produce ad creatives that don't just look good, but deliver measurable success.</p>
+                            <p className="mt-2">Let AdsVerse produce ad creatives that don't just look good, but deliver measurable success.</p>
                             <p className="mt-6 text-2xl">
                                 ✨ Ready for creatives that convert? <Link href="/#contact" className="text-accent hover:underline">Let's craft your next winning ad.</Link>
                             </p>

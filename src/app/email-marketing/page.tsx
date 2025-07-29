@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Email Marketing & Automation Services | StellarBrand',
+    title: 'Email Marketing & Automation Services | AdsVerse',
     description: 'Nurture leads and build lasting customer relationships with our targeted, automated email marketing campaigns that deliver results.',
 };
 
@@ -24,7 +24,7 @@ export default function EmailMarketingPage() {
 
                     <div className="prose prose-invert lg:prose-xl mx-auto text-foreground/80 space-y-8">
                         <p>
-                            Email marketing remains one of the most powerful and profitable tools for building direct relationships with your audience. At StellarBrand, we design and execute sophisticated email marketing strategies that go beyond simple newsletters. We create personalized, automated journeys that nurture leads, drive sales, and foster long-term customer loyalty.
+                            Email marketing remains one of the most powerful and profitable tools for building direct relationships with your audience. At AdsVerse, we design and execute sophisticated email marketing strategies that go beyond simple newsletters. We create personalized, automated journeys that nurture leads, drive sales, and foster long-term customer loyalty.
                         </p>
                         <p>
                             From beautiful, high-converting designs to complex automation sequences, we handle every aspect of your email marketing to ensure your messages are opened, read, and acted upon.
@@ -75,7 +75,7 @@ export default function EmailMarketingPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Connect with your audience where it counts.</p>
-                            <p className="mt-2">Let StellarBrand build email campaigns that your subscribers will actually look forward to opening.</p>
+                            <p className="mt-2">Let AdsVerse build email campaigns that your subscribers will actually look forward to opening.</p>
                             <p className="mt-6 text-2xl">
                                 💌 Ready to elevate your email game? <Link href="/#contact" className="text-accent hover:underline">Let's craft your next campaign.</Link>
                             </p>

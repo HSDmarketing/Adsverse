@@ -89,7 +89,7 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold">Email Us</h3>
                   <p className="text-foreground/80 text-sm">Send us a message anytime.</p>
-                  <a href="mailto:contact@stellarbrand.com" className="text-accent hover:underline">contact@stellarbrand.com</a>
+                  <a href="mailto:contact@adsverse.com" className="text-accent hover:underline">contact@adsverse.com</a>
                 </div>
               </CardContent>
             </Card>

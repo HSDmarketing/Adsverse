@@ -18,7 +18,7 @@ export function About() {
           <div className="space-y-6">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Igniting Brands with Cosmic Creativity & Data-Driven Strategy.</h2>
             <p className="text-foreground/80">
-              At StellarBrand, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a passionate team of strategists, creators, and innovators dedicated to making your brand shine its brightest in the digital cosmos.
+              At AdsVerse, our mission is to propel your brand beyond the stratosphere. We believe every business has the potential to be a star, and our purpose is to provide the rocket fuel to get you there. We are a passionate team of strategists, creators, and innovators dedicated to making your brand shine its brightest in the digital cosmos.
             </p>
             <div className="space-y-4">
               <h3 className="font-headline text-xl font-semibold">Our Core Values</h3>

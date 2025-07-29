@@ -26,7 +26,7 @@ const caseStudies = [
 
 const testimonials = [
   {
-    quote: "StellarBrand took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled. The results were simply outstanding.",
+    quote: "AdsVerse took our vision and launched it into a new galaxy. Their creativity and strategic approach are unparalleled. The results were simply outstanding.",
     name: "Kajol Kale",
     title: "CEO of Namolegallabs",
     avatar: "https://placehold.co/100x100.png",

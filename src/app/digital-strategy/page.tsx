@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Digital Strategy & Marketing Consultation | StellarBrand',
+    title: 'Digital Strategy & Marketing Consultation | AdsVerse',
     description: 'Get a clear, actionable roadmap for your digital marketing success with our expert 1-on-1 consultation sessions and strategic planning.',
 };
 
@@ -68,7 +68,7 @@ export default function DigitalStrategyPage() {
 
                         <div className="text-center border-t border-border pt-8 mt-12">
                             <p className="text-xl">Navigate your digital journey with an expert co-pilot.</p>
-                            <p className="mt-2">Book a consultation with StellarBrand and get the strategic clarity you've been searching for.</p>
+                            <p className="mt-2">Book a consultation with AdsVerse and get the strategic clarity you've been searching for.</p>
                             <p className="mt-6 text-2xl">
                                 🚀 Ready to map out your success? <Link href="/#contact" className="text-accent hover:underline">Book your free strategy session today.</Link>
                             </p>

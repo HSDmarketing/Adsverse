@@ -17,7 +17,7 @@ export function Hero() {
             Where Brands Reach for the Stars
           </h1>
           <p className="mt-6 text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto">
-            StellarBrand is a full-service digital marketing agency that transforms ambitious brands into industry leaders. We blend strategy, creativity, and technology to launch you into a new orbit of success.
+            AdsVerse is a full-service digital marketing agency that transforms ambitious brands into industry leaders. We blend strategy, creativity, and technology to launch you into a new orbit of success.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full shadow-lg shadow-accent/20 transition-transform duration-300 hover:scale-105">

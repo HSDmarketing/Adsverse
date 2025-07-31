@@ -90,7 +90,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-0">
                <SheetHeader className="p-6 flex flex-row items-center justify-between">
-                 <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                 <SheetTitle>Menu</SheetTitle>
                  <Logo />
                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                     <X className="h-6 w-6" />

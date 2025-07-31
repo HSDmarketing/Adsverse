@@ -1,0 +1,17 @@
+
+{
+  "hosting": {
+    "site": "stellarbrand",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextjsServer"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".output/functions"
+  }
+}
